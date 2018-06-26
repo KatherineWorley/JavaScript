@@ -6,7 +6,29 @@
 <body>
 
 <script>
+	#vars can be updated or redefined. 
+	#var in this case is scoped globally. 
 	var width = 100;
+	console.log(width);
+
+	var width = 200;
+	console.log(width);
+
+	#scoped locally within this function only. 
+	function setWidth() {
+		var width = 200;
+		console.log(width);
+	}
+	setWidth();
+
+	#these variables are avaialbe within the console browser. 
+	var age = 100;
+	if(age > 12) {
+		var dogYears = age * 7;
+		console.log('You are ${dogYears} dog years old!'); 
+	}
+
+
 	let height = 200; 
 	const key = 'abc123'
 </script>
