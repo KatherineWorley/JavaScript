@@ -6,28 +6,34 @@
 <body>
 
 <script>
-	#vars can be updated or redefined. 
-	#var in this case is scoped globally. 
+	// vars can be updated or redefined. 
+	// var in this case is scoped globally. 
 	var width = 100;
 	console.log(width);
 
 	var width = 200;
 	console.log(width);
 
-	#scoped locally within this function only. 
+	// scoped locally within this function only. 
 	function setWidth() {
 		var width = 200;
 		console.log(width);
 	}
 	setWidth();
 
-	#these variables are avaialbe within the console browser. 
+	// dogYears variable is avaiable within the console browser since it is a var. 
 	var age = 100;
 	if(age > 12) {
 		var dogYears = age * 7;
 		console.log('You are ${dogYears} dog years old!'); 
 	}
 
+	// dogYears variable is not avaialbe within the console browser, due to it being a let. 
+	var age = 100;
+	if(age > 12) {
+		var dogYears = age * 7;
+		console.log('You are ${dogYears} dog years old!'); 
+	}
 
 	let height = 200; 
 	const key = 'abc123'
