@@ -21,19 +21,30 @@
 	}
 	setWidth();
 
-	// dogYears variable is avaiable within the console browser since it is a var. 
+	// dogYears variable is avaiable within the console browser since it is a var. Both var, age and dogYears, are globally scoped. 
 	var age = 100;
 	if(age > 12) {
 		var dogYears = age * 7;
 		console.log('You are ${dogYears} dog years old!'); 
 	}
 
-	// dogYears variable is not avaialbe within the console browser, due to it being a let. 
+	// dogYears variable as let is not avaiable within the console browser, due to it being a let. Let is a block scope only.  Var, age, in this example is scoped globally. 
+	var age = 100;
+	if(age > 12) {
+		let dogYears = age * 7;
+		console.log('You are ${dogYears} dog years old!'); 
+	}
+
+	// dogYears variable is not avaiable within the console browser, due to it being a let. Let is a block scope only.  
 	var age = 100;
 	if(age > 12) {
 		var dogYears = age * 7;
 		console.log('You are ${dogYears} dog years old!'); 
 	}
+
+	var is function scope 
+	const and let are block 
+
 
 	let height = 200; 
 	const key = 'abc123'
