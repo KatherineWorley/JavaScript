@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>let and const in the real world</title>
+</head>
+<body>
+<script>
+	(function() {
+		var name = 'katherine';
+	})();
+	// This scope stops the variable from leaking into the browers console. 
+
+	{
+		const name = 'Katherine';
+		console.log(name);
+	}
+
+	for(var i = 0; i < 10; i++){
+		console.log(i);
+	}
+
+	for(var i = 0; i < 10; i++) {
+		setTimeout(function() {
+			console.log('The number is ' + i);
+		},1000);
+	}
+
+</script>
+</body>
+</html>
