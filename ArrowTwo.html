@@ -8,8 +8,11 @@
 		<script>
 			const type = 'a character';
 			const characters = ['Minnie Mouse', 'Mary Poppins', 'Peter Pan'];
-			const win = characters.map((character, i) => ({name: characters, type, place: i + 1}))
+			const win = characters.map((character, i) => ({name: characters, type, place: i + 1}));
+
+			const ages = [23,65,43,65,86,32,34,10];
+			const old = ages.filter(age => age >= 40);
+			console.log(old);
 		</script>
-	
 </body>
 </html>
