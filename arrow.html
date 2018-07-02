@@ -6,7 +6,7 @@
 <body>
 
 	<script>
-		const names = ['katherine', 'sammy', 'suzie']
+		const names = ['katherine', 'sammy', 'suzie', 'tara']
 
 		const fullNames1 = names.map(function(name) {
 			return `${name} awesome`;
@@ -21,13 +21,22 @@
 		});
 
 		const fullNames4 = names.map(name => `${name} WayCool`);
+		const fullNames5 = names.map(() => `Super Cool`);
 
 
 		console.log(fullNames1)	
 		console.log(fullNames2)	
 		console.log(fullNames3)
 		console.log(fullNames4)	
-		// console.log(fullNames5)			
+		console.log(fullNames5)		
+
+		// This is a named function. Arrow functions are NOT Named functions.  
+		function sayMyNameFirst(name) {
+			alert(`Hello ${name}`)
+		}	
+
+		const sayMyName = (name) => { alert(`Hello ${name}!`) }
+		sayMyName('Katherine');
 
 	</script>
 
