@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> default arguments </title>
+</head>
+<body>
+
+	<script>
+		functon calculateBill(total, tax, tip) {
+			if(tax === undefined) {
+				tax = 
+			}
+			return total + (total * tax) + (total * tip);
+		}
+
+		const totalBil = calculateBill(100, 0.13, 0.15);
+		console.log(totalBill);
+
+	</script>
+
+</body>
+</html>
