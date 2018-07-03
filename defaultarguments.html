@@ -6,14 +6,11 @@
 <body>
 
 	<script>
-		functon calculateBill(total, tax, tip) {
-			if(tax === undefined) {
-				tax = 
-			}
+		functon calculateBill(total, tax = 0.13, tip = 0.15) {
 			return total + (total * tax) + (total * tip);
 		}
 
-		const totalBil = calculateBill(100, 0.13, 0.15);
+		const totalBil = calculateBill(100, undefined, 0.15);
 		console.log(totalBill);
 
 	</script>
