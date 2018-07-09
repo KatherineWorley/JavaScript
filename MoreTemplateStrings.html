@@ -33,14 +33,13 @@
 			{ name: 'Cotton', age: 12 },
 			{ name: 'Spot', age: 10 },
 			{ name: 'Toulouse', age: 12 },
+		];
 
-
-
-		]
-
-
-
-
+		const markup = `
+			<ul class="dogs">
+			${dogs.map(dog => `<li>${dog.name} is ${dog.age * 7}</li>`)}
+			</ul>
+		`
 	</script>
 
 </body>
