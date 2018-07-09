@@ -37,9 +37,12 @@
 
 		const markup2 = `
 			<ul class="dogs">
-			${dogs.map(dog => `<li>${dog.name} is ${dog.age * 7}</li>`)}
+			${dogs.map(dog => `<li>${dog.name} is ${dog.age * 7}</li>`).join(``)}
 			</ul>
 		`
+		document.body.innerHTML = markup2;
+		console.log(markup);
+		console.log(markup2);
 	</script>
 
 </body>
