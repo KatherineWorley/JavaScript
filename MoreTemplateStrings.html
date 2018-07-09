@@ -9,9 +9,36 @@
 		const person = {
 			name: 'Katherine',
 			job: 'Designer',
-			city: 'Tampa'
+			city: 'Tampa',
 			bio: 'Yo, Yo, Yo.',
 		};
+
+		console.log(person)
+
+		const markup = `
+			<div class="person">
+				<h2>
+					${person.name}
+					<span class="job">${person.job}</span>
+				</h2>
+				<p class="location">${person.city}</p>
+				<p class="bio">${person.bio}</p>
+			</div>
+		`;
+
+		console.log(markup);
+		document.body.innerHTML = markup;
+
+		const dogs = [
+			{ name: 'Cotton', age: 12 },
+			{ name: 'Spot', age: 10 },
+			{ name: 'Toulouse', age: 12 },
+
+
+
+		]
+
+
 
 
 	</script>
