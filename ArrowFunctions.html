@@ -8,10 +8,10 @@
 
 <ul>
 <li data-time="5:17">Flexbox Video</li>
-<li data-time="4:37">Flexbox Video</li>
+<li data-time="4:37">Redux Video</li>
 <li data-time="7:27">Flexbox Video</li>
-<li data-time="9:25">Flexbox Video</li>
-<li data-time="8:12">Flexbox Video</li>
+<li data-time="9:25">Redux Video</li>
+<li data-time="8:12">Redux Video</li>
 <li data-time="1:59">Flexbox Video</li>
 </ul>
 
@@ -19,10 +19,8 @@
 
 // <!-- Select all the list items on the page and convert to an array -->
 const items = Array.from(document.querySelectorAll('[data-time]'));
-console.log(items);
-
 // <!-- Filter for only the elements that contain the word 'flexbox' -->
-
+const filtered = items.filter(item => item.textContent.includes('Flexbox'));
 // <!-- Map down to a list of time strings -->
 
 // <!-- Map to an array of seconds -->
@@ -32,6 +30,8 @@ console.log(items);
 // <!-- Reduce to get total  -->
 
 // <!-- This can also be done in a sing, reduce(), but we're practicing arrow functions here, so no chain.  -->
+
+console.log(filtered);
 
 </script>
 
