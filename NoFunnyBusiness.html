@@ -15,7 +15,17 @@ const person = {
 	bio: 'graphic designer turned data organizer.'
 };
 
-var text = "Yo Yo Yo"
+const markup = `
+	<div class="person">
+		<h2>
+			${person.name}
+			<span class="job">${person.job}</span>
+		</h2>
+		<p class="location">${person.bio}</p>
+	</div>
+
+
+`
 
 </script>
 </body>
