@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Render Keywords</title>
+</head>
+<body>
+
+	<script>
+		const beer = {
+			name: 'Belgian Wit'
+			brewery: 'Steam Whistle Brewery'
+			keywords: ['pale', 'cloudy', 'spiced', 'crisp']
+		};
+
+		function renderKeywords(keywords) {
+			return ``; 
+		}
+
+		const markup = `
+			<div class="beer">
+				<h2>${beer.name}</h2>
+				<p class="brewery">${beer.brewery}</p>
+				${renderKeywords(beer.keywords)}
+			</div>
+		`;
+	</script>
+
+</body>
+</html>
