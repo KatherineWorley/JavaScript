@@ -7,13 +7,17 @@
 
 	<script>
 		const beer = {
-			name: 'Belgian Wit'
-			brewery: 'Steam Whistle Brewery'
+			name: 'Belgian Wit',
+			brewery: 'Steam Whistle Brewery',
 			keywords: ['pale', 'cloudy', 'spiced', 'crisp']
 		};
 
 		function renderKeywords(keywords) {
-			return ``; 
+			return `
+				<ul>
+					${keywords.map(keyword => `<li>${keyword}</li>`)}
+				</ul>	
+			`; 
 		}
 
 		const markup = `
@@ -23,6 +27,7 @@
 				${renderKeywords(beer.keywords)}
 			</div>
 		`;
+
 	</script>
 
 </body>
