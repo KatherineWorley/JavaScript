@@ -4,7 +4,6 @@
 	<title>Render Keywords</title>
 </head>
 <body>
-
 	<script>
 		const beer = {
 			name: 'Belgian Wit',
@@ -15,7 +14,7 @@
 		function renderKeywords(keywords) {
 			return `
 				<ul>
-					${keywords.map(keyword => `<li>${keyword}</li>`)}
+					${keywords.map(keyword => `<li>${keyword}</li>`).join('')}
 				</ul>	
 			`; 
 		}
@@ -29,6 +28,5 @@
 		`;
 
 	</script>
-
 </body>
 </html>
