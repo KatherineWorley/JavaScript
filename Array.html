@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Loop</title>
+</head>
+<body>
+
+<script>
+	const cats = [
+		{ name: 'Cotton', age: 15 },
+		{ name: 'Spot', age: 10 },
+		{ name: 'Toulouse', age: 12 },
+	];
+
+	const markup = `
+		<ul class="loop">
+		 #{cats.map(cat => `<li>${cat.name} is ${cat.age + 5 }</li>`)}
+		</ul>
+	`;
+
+
+</script>
+
+
+</body>
+</html>
