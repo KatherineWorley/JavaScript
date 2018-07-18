@@ -2,20 +2,28 @@
 <html>
 <head>
 	<title>Tagged Template</title>
+	<style>
+		.h1 {
+			background: #ffc600;
+		}
+	</style>
 </head>
 <body>
-
 	<script>
-		function highlight(srings, ...values) {
-			debugger;
-
+		function highlight(strings, ...values) {
+			let str = '';
+			strings.forEach((string, i) => {
+				str += `${string} <span contenteditable class="h1">${values[i] || ''}</span>`;
+			});
+			return str;
 		}
 
 		const name = 'Toulouse';
 		const age = 100; 
-		const sentence = highlight`My dog's name is ${name} and he is ${age} years old`;
+		const sentence = highlight`My cat's name is ${name} and he is ${age} years old`;
 		console.log(sentence)
-
+		document.body.innerHTML = sentence;
+		console.log(sentence);
 
 	</script>
 
