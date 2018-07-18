@@ -12,8 +12,23 @@
 			JS: 'JavaScript'
 		};
 
+		function addAbbreviations(strings, ...values) {
+			const abbreviated = values.map(value => {
+				if(dict[value]) {
+					return `<abbr title="${dict[value]}">${value}</abbr>`
+				}
+			});
+		}
+
 		const first = 'Katherine';
 		const last = 'Worley';
+		const sentence = `Hello may name is ${first} ${last} and I love to code ${'HTML'}, ${'CSS'} and ${'JS'}`;
+
+		const bio = document.querySelector('.bio');
+		const p = document.createElement('p');
+		p.innerHTML = sentence;
+		bio.appendChild(p);
+
 	</script>
 
 </body>
