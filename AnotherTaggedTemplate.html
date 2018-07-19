@@ -20,6 +20,9 @@
 				return value;
 			});
 			console.log(abbreviated);
+			return strings.reduce((sentence, string, i) => {
+				return `${sentence}${string}${abbreviated[i] || ''}`;
+			}, '');
 		}
 
 		const first = 'Katherine';
