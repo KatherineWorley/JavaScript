@@ -19,21 +19,19 @@
 				}
 				return value;
 			});
-			console.log(abbreviated);
 			return strings.reduce((sentence, string, i) => {
-				return `${sentence}${string}${abbreviated[i] || ''}`;
-			}, '');
-		}
+		    return sentence + string + (abbreviated[i] || '');
+		    }, '');
+		  }
 
 		const first = 'Katherine';
 		const last = 'Worley';
-		const sentence = addAbbreviations`Hello may name is ${first} ${last} and I love to code ${'HTML'}, ${'CSS'} and ${'JS'}`;
+		const sentence = addAbbreviations`Hello may name is ${first} ${last} and I love to code ${'HTML'}, ${'CSS'} and ${'JS'}`
 
-		const bio = document.querySelector('.bio');
-		const p = document.createElement('p');
-		
-		p.innerHTML = sentence;
-		bio.appendChild(p);
+	  	const bio = document.querySelector('.bio');
+	  	const p = document.createElement('p');
+	  	p.innerHTML = sentence;
+	  	bio.appendChild(p);
 	</script>
 
 </body>
