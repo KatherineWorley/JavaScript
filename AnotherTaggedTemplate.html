@@ -17,6 +17,7 @@
 				if(dict[value]) {
 					return `<abbr title="${dict[value]}">${value}</abbr>`
 				}
+				return value;
 			});
 			console.log(abbreviated);
 		}
