@@ -11,26 +11,24 @@
   </style>
 </head>
 <body>
+ 	<div class="bio">
+	</div>
 
-  <div class="bio">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/1.0.6/purify.min.js"></script>
+	<script>
+	  function sanitize(strings, ...values) {
+	    const dirty = strings.reduce((prev, next, i) => `${prev}${next}${values[i] || ''}`, '');
+	    return DOMPurify.sanitize(dirty);
+	  }
+	  const first = 'katherine';
+	  const aboutMe = `I love to do stuff and things. <img src="https://www.fillmurray.com/200/300" alt="Fill Murray" onload="alert('you got fill murray');" />`;
 
-  </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/1.0.6/purify.min.js"></script>
-<script>
-  function sanitize(strings, ...values) {
-    const dirty = strings.reduce((prev, next, i) => `${prev}${next}${values[i] || ''}`, '');
-    return DOMPurify.sanitize(dirty);
-  }
-  const first = 'katherine';
-  const aboutMe = `I love to do stuff and things. <img src="https://www.fillmurray.com/200/300" alt="Fill Murray" onload="alert('you got fill murray');" />`;
-
-  const html = sanitize`
-    <h3>${first}</h3>
-    <p>${aboutMe}</p>
-  `;
-  const bio = document.querySelector('.bio');
-  bio.innerHTML = html;
+	  const html = sanitize`
+	    <h3>${first}</h3>
+	    <p>${aboutMe}</p>
+	  `;
+	  const bio = document.querySelector('.bio');
+	  bio.innerHTML = html;
 </script>
 </body>
 </html>
