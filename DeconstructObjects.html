@@ -11,26 +11,31 @@
 		last: 'worley',
 		country: 'USA',
 		city: 'tampa',
-		twitter: '@worleykatherine'
+		twithand: '@worleykatherine'
 	};
 
-	const { first, last, twitter } = person;
+	const { first, last, twithand } = person;
 
 
 	const katherine = {
 		first: 'katherine',
 		last: 'worley',
-			links: = {
-					social = {
-					twitter: '@worleykatherine'
-					linkedin: 'katherineworley'
-					};
-					web = {
-					person: 'https://www.katherineworley.com'
-					github: 'https://github.com/KatherineWorley'
-					};
-			};
-		};
+		links: {
+					social: {
+						twitter: 'https://twitter.com/worleykatherine',
+						linkedin: 'https://www.linkedin.com/in/katherineworley/',
+					},
+
+					web: {
+						person: 'https://www.katherineworley.com',
+						github: 'https://github.com/KatherineWorley',
+					},
+			}
+		}
+
+	const { twitter, linkedin } = katherine.links.social; 	
+	
+
 </script>
 
 
