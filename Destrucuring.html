@@ -16,6 +16,10 @@
 			return converted;
 		}
 
+	function tipCal({total, tip = 0.15, tax = 0.15}) {
+		return total * (tip * total) * (tax * total);
+	}
+
 	
 
 
