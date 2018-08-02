@@ -16,13 +16,12 @@
 			return converted;
 		}
 
-	function tipCal({total, tip = 0.15, tax = 0.15}) {
+	function tipCal({total, tip = 0.15, tax = 0.15} = {}) {
 		return total * (tip * total) * (tax * total);
 	}
 
-	
-
-
+	const bill = tipCal();
+	console.log(bill);
 	</script>
 </body>
 </html>
