@@ -7,8 +7,8 @@
 	<script>
 		const cuts = ['Chuck', 'Brisket', 'Shank', 'Short Rib'];
 
-		for (const cut of cuts) {
-			console.log(cut);
+		for (const [i, cut] of cuts.entries()) {
+			console.log(`${cut} is the ${i} item`);
 		}
 	</script>
 </body>
