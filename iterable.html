@@ -10,6 +10,18 @@
 		for (const [i, cut] of cuts.entries()) {
 			console.log(`${cut} is the ${i} item`);
 		}
+
+		function addUpNumbers() {
+			let total = 0;
+			for (num of arguments) {
+				total += num; 
+			}
+			console.log(total);
+			return total;
+		}
+
+		addUpNumbers(10,23,53,34,12,13,123)
+
 	</script>
 </body>
 </html>
