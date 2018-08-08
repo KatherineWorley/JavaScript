@@ -34,6 +34,9 @@
 		const ps = document.querySelectorAll('p')
 		for (const paragraph of ps) {
 			console.log(paragraph);
+			paragraph.addEventListener('click', function() {
+				console.log(this.textContent);
+			})
 		}
 	</script>
 </body>
