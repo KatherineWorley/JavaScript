@@ -14,9 +14,12 @@
 	const names = people.map(person => person.textContent);
 
 	function sumAll() {
+		const nums = Array.from(arguments);
+		console.log(arguments)
+		return arguments.reduce((prev,next) => prev + next, 0);
 
 	}
-	sumAll(2,34,12,34,54,34,65)
+	sumAll(2,34,12,34,54,34,65,34,65)
 
 	</script>
 </body>
