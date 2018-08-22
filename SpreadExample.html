@@ -6,11 +6,22 @@
 	</title>
 </head>
 <body>
+	<div class="people">
+		<p>Katherine</p>
+		<p>Peter</p>
+		<p>Suzan</p>
+	</div>
 
 	<script>
-		const people
+		const people = [...document.querySelectorAll('.people p')];
+		console.log(people);
+		const names = people.map();
 
-
+		const deepDish = {
+			pizzaName: 'Deep Dish';
+			size: 'Medium',
+			ingredients: ['Marinara', 'Italian Sausage', 'Dough', 'Cheese']
+		};
 	</script>
 
 </body>
