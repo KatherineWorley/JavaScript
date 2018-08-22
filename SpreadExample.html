@@ -25,6 +25,20 @@
 
 		const shoppingList = ['Milk', 'Flour', ...deepDish.ingredients];
 		console.log(shoppingList)
+
+		const comments = [
+			{ id: 12334, text: 'Yo, how are you doing'},
+			{ id: 43554, text: 'HIYA!'},
+			{ id: 89549, text: 'OMG, what is going on?'},
+			{ id: 90654, text: 'HAHA'},
+		];
+
+		const id = 12334; 
+		const commentsIndex = comments.findIndex(comment => comment.id === id);
+		const newComments = [...comments.slice(0, commentIndex), ...comments.slice(commentIndex + 1)];
+		this.setState({ comments: newComments })
+
+
 	</script>
 
 </body>
