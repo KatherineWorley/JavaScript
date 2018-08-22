@@ -13,15 +13,18 @@
 	</div>
 
 	<script>
-		const people = [...document.querySelectorAll('.people p')];
+		const people = Array.from(document.querySelectorAll('.people p'));
 		console.log(people);
-		const names = people.map();
+		const names = people.map((person) => person.textContent);
 
 		const deepDish = {
 			pizzaName: 'Deep Dish';
 			size: 'Medium',
 			ingredients: ['Marinara', 'Italian Sausage', 'Dough', 'Cheese']
 		};
+
+		const shoppingList = ['Milk', 'Flour', ...deepDish.ingredients];
+		console.log(shoppingList)
 	</script>
 
 </body>
