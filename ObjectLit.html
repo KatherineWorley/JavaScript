@@ -40,11 +40,22 @@
 		const value = 'yellow';
 
 		const tShirt = {
-			[key]: value
+			[key]: value,
 			[`${key}Opposite`]: invertColor(value)
 		};
 
 		console.log(tShirt)
+
+		const keys = ['size', 'color', 'weight'];
+		const values = ['medium', 'red', 100];
+
+		const shirt = {
+			[keys.shift()]: values.shift(),
+			[keys.shift()]: values.shift(),
+			[keys.shift()]: values.shift(),
+		}
+
+		console.log(shirt);
 	</script>
 
 </body>
