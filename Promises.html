@@ -6,9 +6,10 @@
 <body>
 
 	<script>
-		
-
-		
+		console.log('Going to fetch the latest posts from Wes/` Blog');
+		const posts = fetch('http://wesbos.com/wp-json/ep/v2/posts');
+		console.log('Done!');
+		console.log(posts);
 	</script>
 
 </body>
