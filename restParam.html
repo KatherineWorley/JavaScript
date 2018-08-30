@@ -5,5 +5,15 @@
 </head>
 <body>
 
+<script>
+	function convertCurrency(rate, tax, tip, ...amounts) {
+		console.log(rate, tax, tip, amounts);
+		return amounts.map(amount => amount * rate);
+	}
+
+	const amounts = convertCurrency(1.54, 10, 23, 52, 1, 6); 
+	console.log(amounts);
+</script>
+
 </body>
 </html>
