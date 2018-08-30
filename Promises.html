@@ -6,10 +6,19 @@
 <body>
 
 	<script>
-		console.log('Going to fetch the latest posts from Wes/` Blog');
-		const posts = fetch('http://wesbos.com/wp-json/ep/v2/posts');
-		console.log('Done!');
-		console.log(posts);
+		// console.log('Going to fetch the latest posts from Wes/` Blog');
+		// const posts = fetch('http://wesbos.com/wp-json/ep/v2/posts');
+		// console.log('Done!');
+		// console.log(posts);
+
+			const postPromise = fetch('http://wesbos.com/wp-json/ep/v2/posts');
+			postPromise.then(data => {
+				console.log(data);
+			})
+			// this is a callback function. 
+			$('a').on('click',function() {
+				alert('hey');
+			})		
 	</script>
 
 </body>
