@@ -12,7 +12,14 @@
 		// console.log(posts);
 
 			const postPromise = fetch('http://wesbos.com/wp-json/ep/v2/posts');
-			postPromise.then(data => data.json()).then(data => { console.log(data) })
+
+			postPromise
+				.then(data => data.json())
+				.then(data => { console.log(data) })
+				.catch((err) => {
+					console.error(err);
+				})
+
 			// this is a callback function. 
 			// $('a').on('click',function() {
 			// 	alert('hey');
