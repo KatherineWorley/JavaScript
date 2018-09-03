@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Promises</title>
+</head>
+<body>
+
+	<script>
+		const weather = new Promise((resolve) => {
+			setTimeout(() => {
+				resolve({ temp: 29, conditions: 'Sunny with Clouds'});
+			}, 2000);
+		});
+
+		const tweets = new Promise((resolve) => {
+			setTimeout(() => {
+				resolve([ 'I like cake, Yo.', 'BBQ is good too! Yes, it is.'])
+			   }, 500);
+		});
+
+		Promise
+			.all([weather, tweets])
+			.then(responses => {
+				console.log(responses);
+			})
+
+	</script>
+
+</body>
+</html>
