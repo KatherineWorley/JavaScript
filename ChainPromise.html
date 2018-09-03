@@ -7,13 +7,13 @@
 
 <script>
 
-	cost posts = [
+	const posts = [
 		{ title: 'I love JavaScript, too', author: 'Katherine', id: 1},
 		{ title: 'I love JavaScript, as well', author: 'Mary', id: 2},
 		{ title: 'I love JavaScript', author: 'Suzen', id: 3},
 	];
 
-	cost author = [
+	const author = [
 		{ name: 'Katherine Worley', twitter: '@Katherine', bio: 'Loves JavaScript' },
 		{ name: 'Mary Berry', twitter: '@Mary', bio: 'Also loves JavaScript' },
 		{ name: 'Suzen Mount', twitter: '@Suzen', bio: 'And yet again, loves JavaScript'},
@@ -39,7 +39,7 @@
 		// create new promise
 		return new Promise((resolve, reject) => {
 			// find the author
-			const authorDetails = authors.find(person.name === post.name);
+			const authorDetails = authors.find(person.name === post.author);
 			if(authorDetails) {
 				//  "hydrate" the post object with the author object
 				post.author = authorDetails;
@@ -56,8 +56,12 @@
 			console.log(post);
 			return hydrateAuthor(post);
 		})
-
-
+		.then(post => {
+			console.log(post);
+		})
+		.catch(err => {
+			console.error(err);
+		})
 
 </script>
 
