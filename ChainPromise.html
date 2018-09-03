@@ -20,17 +20,27 @@
 	];
 
 	function getPostById(id) {
+		// create a new promise
 		return new Promise((resolve, reject) => {
+			// using a settimeout to mimick a database
+			setTimeout(() => {
+				// fimd post we want
 			const post = posts.find(post => post.id === id);
 			if(post){
-				resolve(post);
+				resolve(post); //send the post back
 			} else {
 				reject(Error('No Post Was Found.'));
 			}
+		  }, 200)
 		});
 	}
 
 	getPostById(2)
+		.then(post => {
+			console.log(post);
+		})
+
+
 </script>
 
 </body>
