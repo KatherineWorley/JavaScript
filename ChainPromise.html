@@ -19,6 +19,18 @@
 		{ name: 'Suzen Mount', twitter: '@Suzen', bio: 'And yet again, loves JavaScript'},
 	];
 
+	function getPostById(id) {
+		return new Promise((resolve, reject) => {
+			const post = posts.find(post => post.id === id);
+			if(post){
+				resolve(post);
+			} else {
+				reject(Error('No Post Was Found.'));
+			}
+		});
+	}
+
+	getPostById(2)
 </script>
 
 </body>
