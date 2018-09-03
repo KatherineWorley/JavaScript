@@ -8,9 +8,9 @@
 <script>
 
 	const posts = [
-		{ title: 'I love JavaScript, too', author: 'Katherine', id: 1},
-		{ title: 'I love JavaScript, as well', author: 'Mary', id: 2},
-		{ title: 'I love JavaScript', author: 'Suzen', id: 3},
+		{ title: 'I love JavaScript, too', author: 'Katherine Worley', id: 1},
+		{ title: 'I love JavaScript, as well', author: 'Mary Berry', id: 2},
+		{ title: 'I love JavaScript', author: 'Suzen Mount', id: 3},
 	];
 
 	const authors = [
@@ -51,9 +51,8 @@
 		
 	}
 
-	getPostById(2)
+	getPostById(1)
 		.then(post => {
-			console.log(post)
 			return hydrateAuthor(post);
 		})
 		.then(post => {
