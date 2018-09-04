@@ -17,6 +17,12 @@
 		for(person in classRoom) {
 			console.log(person);
 		}
+
+		const syms = Object.getOwnPropertySymbols(classRoom);
+		const data = syms.map(sym => classRoom[sym]);
+
+		console.log(syms);
+		console.log(data);
 	</script>
 </body>
 </html>
