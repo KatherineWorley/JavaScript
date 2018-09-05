@@ -5,5 +5,8 @@
 	 "node": true,
 	 "jquery": true,
 	},
-	"extends": "eslint:recommended"
+	"extends": "eslint:recommended",
+	"rules": {
+		 "no-console": "off",
+	}
 }
