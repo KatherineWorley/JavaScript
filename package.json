@@ -1,0 +1,22 @@
+{
+  "name": "testjs",
+  "version": "1.0.0",
+  "description": "Starting a json package",
+  "main": "bad-code.js",
+  "scripts": {
+    "test": "eslint bad-code.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatherineWorley/JavaScript.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Katherine Test",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatherineWorley/JavaScript/issues"
+  },
+  "homepage": "https://github.com/KatherineWorley/JavaScript#readme"
+}
