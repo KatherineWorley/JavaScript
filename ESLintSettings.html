@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Promises</title>
+	<title>Multiple Promises</title>
 </head>
 <body>
 
 	<script>
-		// console.log('Going to fetch the latest posts from Wes/` Blog');
-		// const posts = fetch('http://wesbos.com/wp-json/ep/v2/posts');
-		// console.log('Done!');
-		// console.log(posts);
+		const weather = new Promise((resolve) => {
+			setTimeout(() => {
+				resolve({ temp: 86, conditions: 'Sunny with Clouds'});
+			}, 2000);
+		});
 
-			const postPromise = fetch('http://wesbos.com/wp-json/ep/v2/posts');
+		const tweets = new Promise((resolve) => {
+			setTimeout(() => {
+				resolve([ 'I like cake, Yo.', 'BBQ is good too! Yes, it is.'])
+			   }, 500);
+		});
 
-			postPromise
-				.then(data => data.json())
-				.then(data => { console.log(data) })
-				.catch((err) => {
-					console.error(err);
-				})
+		Promise
+			.all([weather, tweets])
+			.then(responses => {
+				const [weather, tweets] = responses;
+				console.log(weather, tweets)
+			});
 
-			// this is a callback function. 
-			// $('a').on('click',function() {
-			// 	alert('hey');
-			// })		
+	  const postsPromise = fetch('https://wesbos.com/wp-json/wp/v2/posts');
+	  const streetCarsPromise = fetch('http://data.ratp.fr/api/datasets/1.0/search/?q=paris');
+
+	  Promise
+	    .all([streetCarsPromise])
+	    .then(responses => {
+	      return Promise.all(responses.map(res => res.json()))
+	    })
+	    .then(responses => {
+	      console.log(responses);
+	    });
 	</script>
 
 </body>
