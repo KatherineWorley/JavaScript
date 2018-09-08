@@ -1,6 +1,5 @@
 /* globals twttr */
 /* globals ga */
-/* eslint-disable no-extend-native */
 
 var weather = new Promise((resolve) => {
 	setTimeout(() => {
@@ -40,8 +39,10 @@ twttr.trackConversation();
 
 // https://tc39.github.io/ecma262/#sec-array.prototype.includes
 if (!Array.prototype.includes) {
+	/* eslint-disable no-extend-native */
 	Object.defineProperty(Array.prototype, 'includes', {
 		value: function(searchElement, fromIndex) {
+			/* eslint-disable no-extend-native */
 
 			if (this == null) {
 				throw new TypeError('"this" is null or not defined');
