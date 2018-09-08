@@ -37,9 +37,9 @@ Promise
 ga.track();
 twttr.trackConversation();
 
+/* eslint-disable */
 // https://tc39.github.io/ecma262/#sec-array.prototype.includes
 if (!Array.prototype.includes) {
-	/* eslint-disable no-extend-native */
 	Object.defineProperty(Array.prototype, 'includes', {
 		value: function(searchElement, fromIndex) {
 			/* eslint-disable no-extend-native */
@@ -90,3 +90,4 @@ if (!Array.prototype.includes) {
 		}
 	});
 }
+/* eslint-enable */
