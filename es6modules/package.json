@@ -4,7 +4,7 @@
   "description": "My first json package",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --progress --watch"
   },
   "author": "Katherine Worley",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
     "babel-preset-es2015-native-modules": "^6.9.4",
-    "webpack": "^4.20.2"
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
