@@ -11,7 +11,14 @@ module.exports = {
 	},
 	module: {
 		loaders: [
-		
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: 'babel',
+				query: {
+					presents: ['es2015-native-modules']
+				}
+			}
 		]
 	}
 };
