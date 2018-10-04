@@ -1,5 +1,7 @@
 const webpack = require('webpack'); 
 const nodeEnv = process.env.NODE_ENV || 'production';
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 
 module.exports = {
 	devtool: 'source-map',
@@ -20,13 +22,18 @@ module.exports = {
 				}
 			}
 		]
-	},
+	optimization: {
+	    minimizer: [
+	      new UglifyJsPlugin({ /* your config */ })
+	    ]
+	  },
+	};
 	plugins: [
 		// uglify js
 		new webpack.optimize.UglifyJsPlugin({
 			compress: { warnings: false },
 			output: { comments: false },
-			sourcemap: true
+			sourceMap: true
 		}),
 		// env plugin
 		new webpack.DefinePlugin({
