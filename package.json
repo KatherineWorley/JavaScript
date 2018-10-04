@@ -31,6 +31,7 @@
     "eslint-plugin-html": "^4.0.5",
     "react": "^16.5.0",
     "react-event-listener": "^0.6.3",
-    "react-swipeable-views": "^0.12.17"
+    "react-swipeable-views": "^0.12.17",
+    "roughjs": "^2.2.5"
   }
 }
