@@ -22,12 +22,12 @@ module.exports = {
 				}
 			}
 		]
-	optimization: {
-	    minimizer: [
-	      new UglifyJsPlugin({ /* your config */ })
-	    ]
-	  },
-	};
+	// optimization: {
+	//     minimizer: [
+	//       new UglifyJsPlugin({ /* your config */ })
+	//     ]
+	//   },
+	},
 	plugins: [
 		// uglify js
 		new webpack.optimize.UglifyJsPlugin({
