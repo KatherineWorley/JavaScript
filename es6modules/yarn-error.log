@@ -1,0 +1,59 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js add --dev babel-core@^7.0.0-0
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  8.11.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/katherineworley/Desktop/websites/JavaScript/JavaScript/es6modules/node_modules/babel-cli/node_modules/babel-core'
+
+npm manifest: 
+  {
+    "name": "es6modules",
+    "version": "1.0.0",
+    "description": "My first json package",
+    "main": "app.js",
+    "scripts": {
+      "build": "webpack --progress --watch"
+    },
+    "author": "Katherine Worley",
+    "license": "ISC",
+    "dependencies": {
+      "babel-cli": "^6.26.0",
+      "build": "^0.1.4",
+      "configure": "0.0.1",
+      "eslint": "^5.6.1",
+      "flickity": "^2.1.2",
+      "insane": "^2.6.2",
+      "jquery": "^3.3.1",
+      "js-yaml": "^3.12.0",
+      "jsonp": "^0.2.1",
+      "lodash": "^4.17.11",
+      "node-waf": "^1.0.0",
+      "slug": "^0.9.1"
+    },
+    "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-loader": "^8.0.4",
+      "babel-preset-es2015-native-modules": "^6.9.4",
+      "eslint-plugin-jsx-a11y": "^6.1.2",
+      "uglifyjs-webpack-plugin": "^2.0.1",
+      "webpack": "^4.20.2",
+      "webpack-cli": "^3.1.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
