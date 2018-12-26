@@ -1,4 +1,11 @@
-function fizzBuzz1(num){
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function fizzBuzz1(num){
 	for(let i = 1; i <- num; i++){
 		if(i % 3 === 0 && i % 5 === 0) console.log("Fizz Buzz");
 		else if(i % 3 === 0 ) console.log("Fizz");
@@ -11,13 +18,13 @@ fizzBuzz1(20)
 function fizzBuzz2(){
 	for(var i=1;i<=100;i++){
 		if(i%5 === 0 && i%3 === 0){
-			print('FizzBuzz');
+			console.log('FizzBuzz');
 		} else if(i%3 === 0){
-			print('Fizz');
+			console.log('Fizz');
 		} else if(i%5 === 0){
-			print('Buzz');
+			console.log('Buzz');
 		} else {
-			print(i);
+			console.log(i);
 		}
 	}
 }
@@ -25,13 +32,13 @@ function fizzBuzz2(){
 function fizzBuzz3(){
 	for(var i=1;i<=100;i++){
 		if(i%3 === 0){
-			print('Fizz');
+			console.log('Fizz');
 		} 
 		if(i%5 === 0){
-			print('Buzz');
+			console.log('Buzz');
 		} 
 		if(i%3 !== 0 && i%5 !== 0) {
-			print(i);
+			console.log(i);
 		}
 	}
 }
@@ -49,7 +56,7 @@ function fizzBuzz4(){
 		if(i%3 !== 0 && i%5 !== 0) {
 			output+=i;
 		}
-		print(output);
+		console.log(output);
 	}
 }
 
@@ -58,14 +65,19 @@ function fizzBuzz5(){
 	for(var i=1;i<=100;i++){
 		output = '';
 		if(i%3 === 0){
-			output+='Fizz';
+			console.log+='Fizz';
 		} 
 		if(i%5 === 0){
-			output+='Buzz';
+			console.log+='Buzz';
 		} 
-		if(output === '') {
+		if(console.log === '') {
 			output+=i;
 		}
 		print(output);
 	}
 }
+
+</script>
+
+</body>
+</html>
