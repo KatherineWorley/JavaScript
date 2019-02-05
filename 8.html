@@ -7,14 +7,25 @@
 
 	<script type="text/javascript">
 		const names = ['katherine', 'this is katherine', 'yet again, katherine'];
+
 		const fullNames = names.map(function(name) {
-			return `${name} LastName`;
+			return `${name} LastName1`;
 		});
+
+		const fullNames2 = names.map((name) => {
+			return `${name} LastName2`;
+		});
+
+		const fullNames3 = names.map(name => {
+			return `${name} LastName3`;
+		});
+
+
 		console.log(fullNames);
 
 
 
-		
+
 	</script>
 
 </body>
