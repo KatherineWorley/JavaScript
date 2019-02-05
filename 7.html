@@ -4,14 +4,16 @@
 	<title>More arrow function examples</title>
 </head>
 <body>
-
 <script type="text/javascript">
+
 	const race = '100 dash';
 	const winners = ['first name', 'second name', 'third name'];
+	const win = winners.map((winner, i) => ({name: winner, race, place: i + 1}));
+	console.table(win);
+	const ages = [23, 62, 45, 342, 65,73];
+	const old = ages.filter(age => age >= 60);
+	console.log(old);
 
-	const win = winners.map((winner, i) => ({name: winner, race: race, place: i}))
-	
 </script>
-
 </body>
 </html>
