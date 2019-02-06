@@ -7,7 +7,26 @@
 </head>
 <body>
 
-	<script type="text/javascript"></script>
+	<script type="text/javascript">
+
+		const box = document.querySelector('.box');
+		box.addEventListener('click', function() {
+			let first = 'opening';
+			let second = 'open';
+
+			if(this.classList.contains(first)){
+				[first, second] = [second, first];
+			}
+
+			this.classList.toggle('opening');
+			setTimeout(() => {
+				console.log(this);
+				this.classList.toggle('open');
+			}, 500);
+		});
+
+
+	</script>
 
 </body>
 </html>
