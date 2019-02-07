@@ -13,7 +13,6 @@
 	<button id="pushy">Push Me</button>
 
 	<script type="text/javascript">
-
 		const button = document.querySelector('#pushy');
 		button.addEventListener('click', () => {
 			this.classList.toggle('on');
@@ -33,6 +32,20 @@
 			}
 		}
 
+		const beemer = new Car('toyota', 'blue');
+		const subie = new Car('Subaru', 'white');
+
+		Car.prototype.summarize = () => {
+			return `This car is a ${this.make} in the colour ${this.colour}`;
+		}
+
+		const orderChildren = () => {
+			const children = Array.from(arguments);
+			return children.map((child, i) => {
+				return `${child} was child #${i + 1}`;
+				
+			})
+		}
 	</script>
 
 </body>
