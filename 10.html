@@ -14,7 +14,18 @@
 
 	<script type="text/javascript">
 		
-		
+		const button = document.querySelector('#pushy');
+		button.addEventListener('click', () => {
+			this.classList.toggle('on');
+		});
+
+		const person = {
+			points: 23,
+			score: () => {
+				this.points++;
+			}
+		}
+
 	</script>
 
 </body>
