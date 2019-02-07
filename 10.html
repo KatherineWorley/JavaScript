@@ -13,7 +13,7 @@
 	<button id="pushy">Push Me</button>
 
 	<script type="text/javascript">
-		
+
 		const button = document.querySelector('#pushy');
 		button.addEventListener('click', () => {
 			this.classList.toggle('on');
@@ -23,6 +23,13 @@
 			points: 23,
 			score: () => {
 				this.points++;
+			}
+		}
+
+		class Car {
+			constructor(make, colour) {
+				this.make = make;
+				this.color = colour;
 			}
 		}
 
