@@ -35,7 +35,7 @@
 		const beemer = new Car('toyota', 'blue');
 		const subie = new Car('Subaru', 'white');
 
-		Car.prototype.summarize = () => {
+		Car.prototype.summarize = function() {
 			return `This car is a ${this.make} in the colour ${this.colour}`;
 		}
 
@@ -46,7 +46,7 @@
 			});
 			console.log(arguments);
 		};
-		
+
 	</script>
 </body>
 </html>
