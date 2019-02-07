@@ -20,7 +20,7 @@
 
 		const person = {
 			points: 23,
-			score: () => {
+			score() {
 				this.points++;
 			}
 		}
@@ -28,7 +28,7 @@
 		class Car {
 			constructor(make, colour) {
 				this.make = make;
-				this.color = colour;
+				this.colour = colour;
 			}
 		}
 
@@ -39,14 +39,14 @@
 			return `This car is a ${this.make} in the colour ${this.colour}`;
 		}
 
-		const orderChildren = () => {
+		const orderChildren = function() {
 			const children = Array.from(arguments);
 			return children.map((child, i) => {
 				return `${child} was child #${i + 1}`;
-
-			})
-		}
+			});
+			console.log(arguments);
+		};
+		
 	</script>
-
 </body>
 </html>
