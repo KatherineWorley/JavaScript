@@ -14,7 +14,7 @@
 
 	<script type="text/javascript">
 		const button = document.querySelector('#pushy');
-		button.addEventListener('click', () => {
+		button.addEventListener('click', function() {
 			this.classList.toggle('on');
 		});
 
@@ -43,7 +43,7 @@
 			const children = Array.from(arguments);
 			return children.map((child, i) => {
 				return `${child} was child #${i + 1}`;
-				
+
 			})
 		}
 	</script>
