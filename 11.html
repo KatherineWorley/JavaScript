@@ -34,8 +34,7 @@
 const items = Array.from(document.querySelectorAll('[data-time]'));
 console.log(items);
 
-const filtered = items.filter(item => item.text)
-
+const filtered = items.filter(item => item.textContent.includes('Flexbox'));
 
 console.log(filtered);
 
