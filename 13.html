@@ -11,11 +11,23 @@
 			name: 'Katherine',
 			job: 'designer',
 			city: 'Tampa',
-			
-
-
+			bio: 'what an amazing bio here.',
 		}
 
+		var text = "hello there, yo yo."
+
+		const markup = `
+			<div class="person">
+			<h2>
+				${person.name}
+				<span class="job">${person.job}</span>
+			</h2>
+			<p class="location">${person.city}</p>
+			<p class='bio'>${person.bio}</p>
+			</div>
+		`;
+
+		document.body.innerHTML = markup; 
 
 	</script>
 
