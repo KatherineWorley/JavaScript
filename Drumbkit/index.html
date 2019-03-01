@@ -10,7 +10,7 @@
 
 <div data-key="65" class="key">
 	<kbd>A</kbd>
-	<span class="sound">clap</span> 
+	<span class="sound">vio</span> 
 </div>
 
 <div data-key="83" class="key">
@@ -55,7 +55,7 @@
 
 </div>
 
-<audio data-key="65" src="sounds/clap.wav"></audio>
+<audio data-key="65" src="sounds/vio.wav"></audio>
 <audio data-key="83" src="sounds/hihat.wav"></audio>
 <audio data-key="68" src="sounds/kick.wav"></audio>
 <audio data-key="70" src="sounds/openhat.wav"></audio>
@@ -65,11 +65,15 @@
 <audio data-key="75" src="sounds/tom.wav"></audio>
 <audio data-key="76" src="sounds/tink.wav"></audio>
 
-<script type="text/javascript">
-	window.addEventListener('keydown', funciton(e) {
-		const audio = document.querySelector(`audio[data-key="{e.keycode}"]`);
+<script>
+	window.addEventListener('keydown', function(e) {
+		const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+		const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 		console.log(audio);
-		if(!audio) return;
+		if(!audio) return; //stop the function from running. 
+		audio.currentTime = 0; //rewind wav file to start. 
+		audio.play();
+		console.log(key)
 	});
 
 </script>
