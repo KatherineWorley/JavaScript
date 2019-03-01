@@ -73,7 +73,8 @@
 		if(!audio) return; //stop the function from running. 
 		audio.currentTime = 0; //rewind wav file to start. 
 		audio.play();
-		console.log(key)
+		key.classlist.add('playing');
+		
 	});
 
 </script>
