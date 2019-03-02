@@ -74,9 +74,9 @@ function playSound(e) {
 		const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 		const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 		if(!audio) return; //stop the function from running. 
+		key.classlist.add('playing');
 		audio.currentTime = 0; //rewind wav file to start. 
 		audio.play();
-		key.classlist.add('playing');
 }
 	
 	const keys = document.querySelectorALL('.key');
@@ -97,6 +97,7 @@ function playSound(e) {
     audio.currentTime = 0;
     audio.play();
   }
+  
   const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
