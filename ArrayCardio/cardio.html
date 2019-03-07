@@ -51,10 +51,14 @@
 // Array.prototype.reduce()
 		
 		const ordered = inventors.sort(function(firstPerson, secondPerson){
-			if(firstPerson.year > secondPerson.year)
+			if(firstPerson.year > secondPerson.year) {
+				return 1;
+			} else {
+				return -1;
+			}
+		});
 
-
-		})
+		console.table(ordered)
 	
 	
     // 4. How many years did all the inventors live?
@@ -74,9 +78,6 @@
 
 
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
-
-
-
 </script>
 
 
