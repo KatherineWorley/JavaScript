@@ -59,6 +59,11 @@
 		});
 
 		console.table(ordered)
+
+
+		const orderedTwo = inventors.sort((firstPerson, secondPerson) => firstPerson.year > secondPerson.year ? 1 : -1 );
+		
+		console.table(orderedTwo)		
 	
 	
     // 4. How many years did all the inventors live?
