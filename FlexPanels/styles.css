@@ -1,0 +1,16 @@
+
+
+
+.panels {
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+}
+
+.panel {
+	background: #68809c;
+	box-shadow:inset 0 0 0 5px rgba(255, 295, 0, 53);
+	color: white;
+	text-align: center;
+	
+}
