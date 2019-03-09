@@ -39,7 +39,10 @@
 
     console.log(isAdultTwo);
 
-    
+    const isAdultThree = people.every(person => ((new Date()).
+      getFullYear()) - person.year >= 19);
+
+    console.log({isAdultThree});
 
     // Array.prototype.every() // is everyone 19 or older?
 
