@@ -40,6 +40,14 @@ Heaps:
 Graphis:
 What algorithms tend to wot with each data structure?
 
+Mathematics-
+Basic descrete Math Questions:
+Counting Problems:
+Probability Problems:
+Descrete Math 101:
+n-Choose-k problems: 
+ilk:
+
 
 
 
