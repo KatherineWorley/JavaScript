@@ -21,7 +21,7 @@ Algorithms -
 		2. A* (A Star) - https://www.youtube.com/watch?v=ySN5Wnu88nE
 
 Sorting - 
-	insertion-sort;
+	insertion-sort; https://www.youtube.com/watch?v=JU767SDMDvA
 	radix-sort:
 	QuickSort:
 	MergeSort:
