@@ -1,2 +1,22 @@
-Coding - JavaScript. Focus on conceptual understanding. 
+Coding - 
+JavaScript. Focus on conceptual understanding. 
+
 Algorithms - 
+Bottom-up approach: 
+Top-down approach:
+How can you imiprove/change it? 
+Sorting:
+Plus Searching:
+Binary Search:
+Divide-and-conquer:
+Dynamic Programming/Memoization:
+Greediness:
+Recursion:
+Algorithms linked to a specific data struction:
+Big-O notation/Run-Time:
+Discuss complex algorithms like:
+	1. Dijkstra
+	2. A*
+
+Sorting - 
+
