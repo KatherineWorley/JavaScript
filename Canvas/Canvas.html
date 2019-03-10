@@ -5,6 +5,7 @@
   <title>HTML5 Canvas</title>
 </head>
 <body>
+	
 <canvas id="draw" width="800" height="800"></canvas>
 <script>
 const canvas = document.querySelector('#draw');
@@ -48,7 +49,6 @@ function draw(e) {
   } else {
     ctx.lineWidth--;
   }
-
 }
 
 canvas.addEventListener('mousedown', (e) => {
@@ -59,7 +59,6 @@ canvas.addEventListener('mousedown', (e) => {
 canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mouseout', () => isDrawing = false);
-
 </script>
 
 <style>
