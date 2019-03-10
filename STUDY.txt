@@ -4,15 +4,15 @@ JavaScript. Focus on conceptual understanding.
 Algorithms - 
 	Bottom-up approach: 
 	Top-down approach:
-	How can you imiprove/change it? 
+	How can you improve/change it? 
 	Sorting:
 	Plus Searching:
 	Binary Search:
 	Divide-and-conquer:
-	Dynamic Programming/Memoization:
+	Dynamic Programming/Memorization:
 	Greediness:
 	Recursion:
-	Algorithms linked to a specific data struction:
+	Algorithms linked to a specific data structure:
 	Big-O notation/Run-Time:
 Discuss complex algorithms like:
 	1. Dijkstra
@@ -37,14 +37,14 @@ Data structures-
 	Trees:
 	Binary Trees:
 	Heaps:
-	Graphis:
+	Graphs:
 What algorithms tend to wot with each data structure?
 
 Mathematics-
-	Basic descrete Math Questions:
+	Basic discrete Math Questions:
 	Counting Problems:
 	Probability Problems:
-	Descrete Math 101:
+	Discrete Math 101:
 	n-Choose-k problems: 
 	ilk:
 
@@ -61,12 +61,16 @@ Three basic ways to represent a graph in memory, what are they and their pros/co
 	2. Matrix
 	3. Adjacency List
 
-Know Conputational complexity, their tradoffs and how to implement them in real code. 
+Know Computational complexity, their tradeoffs and how to implement them in real code. 
 	Basic graph traversal algorithms
 	Breadth-first search
 	depth-first search
 
+Recursion
 
+Thinking Recursively
+coding in a recursive solution
+How can you use recursion to find a more elegant solution to problems that can be solved iteratively? 
 
 
 
