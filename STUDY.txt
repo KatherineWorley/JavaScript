@@ -88,3 +88,8 @@ Web Front End:
 			5. Browser/DOM events and event handling
 			6. XHR Request & HTTP Headers
 			7. JavaScript Closures
+
+Front End/Mobile Design:
+	Web App:
+	Mobile App:
+	API Design (Where front end and back end meet):
