@@ -23,7 +23,7 @@ Algorithms -
 Sorting - 
 	insertion-sort; https://www.youtube.com/watch?v=JU767SDMDvA
 	radix-sort:
-	QuickSort:
+	QuickSort:https://www.youtube.com/watch?v=SLauY6PpjW4
 	MergeSort:
 	HeapSort:
 
