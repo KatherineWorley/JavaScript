@@ -84,7 +84,7 @@ Graphs:
 
 Recursion:
 	Thinking Recursively
-	coding in a recursive solution
+	Coding in a recursive solution
 	How can you use recursion to find a more elegant solution to problems that can be solved iteratively? 
 
 Web Front End:
