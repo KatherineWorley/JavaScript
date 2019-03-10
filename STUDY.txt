@@ -1,22 +1,22 @@
 Coding - 
-JavaScript. Focus on conceptual understanding. 
+	JavaScript. Focus on conceptual understanding. 
 
 Algorithms - 
-	Bottom-up approach: 
-	Top-down approach:
-	How can you improve/change it? 
-	Sorting:
-	Plus Searching:
-	Binary Search:
-	Divide-and-conquer:
-	Dynamic Programming/Memorization:
-	Greediness:
-	Recursion:
-	Algorithms linked to a specific data structure:
-	Big-O notation/Run-Time:
-Discuss complex algorithms like:
-	1. Dijkstra
-	2. A*
+		Bottom-up approach: 
+		Top-down approach:
+		How can you improve/change it? 
+		Sorting:
+		Plus Searching:
+		Binary Search:
+		Divide-and-conquer:
+		Dynamic Programming/Memorization:
+		Greediness:
+		Recursion:
+		Algorithms linked to a specific data structure:
+		Big-O notation/Run-Time:
+	Discuss complex algorithms like:
+		1. Dijkstra
+		2. A*
 
 Sorting - 
 	insertion-sort;
@@ -26,19 +26,19 @@ Sorting -
 	HeapSort:
 
 Data structures-
-	Arrays:
-	Linked Lists:
-	Stacks"
-	Queues:
-	Hash-sets:
-	Hash-maps:
-	Hash-Tables:
-	Dictionary:
-	Trees:
-	Binary Trees:
-	Heaps:
-	Graphs:
-What algorithms tend to work with each data structure?
+		Arrays:
+		Linked Lists:
+		Stacks"
+		Queues:
+		Hash-sets:
+		Hash-maps:
+		Hash-Tables:
+		Dictionary:
+		Trees:
+		Binary Trees:
+		Heaps:
+		Graphs:
+	What algorithms tend to work with each data structure?
 
 Mathematics-
 	Basic discrete Math Questions:
@@ -49,26 +49,30 @@ Mathematics-
 	ilk:
 
 Graphs:
-Can a problem be applied with a graph algorithm?
-For example: 
-	1. Distance
-	2. Search
-	3. Connectivity
-	4. Cycle-detection
+	Can a problem be applied with a graph algorithm?
+	For example: 
+		1. Distance
+		2. Search
+		3. Connectivity
+		4. Cycle-detection
 
-Three basic ways to represent a graph in memory, what are they and their pros/cons? 
-	1. Objects and pointers
-	2. Matrix
-	3. Adjacency List
+	Three basic ways to represent a graph in memory, what are they and their pros/cons? 
+		1. Objects and pointers
+		2. Matrix
+		3. Adjacency List
 
-Know Computational complexity, their tradeoffs and how to implement them in real code. 
-	Basic graph traversal algorithms
-	Breadth-first search
-	depth-first search
+	Know Computational complexity, their tradeoffs and how to implement them in real code. 
+		Basic graph traversal algorithms
+		Breadth-first search
+		depth-first search
 
-Recursion
+Recursion:
+	Thinking Recursively
+	coding in a recursive solution
+	How can you use recursion to find a more elegant solution to problems that can be solved iteratively? 
 
-Thinking Recursively
-coding in a recursive solution
-How can you use recursion to find a more elegant solution to problems that can be solved iteratively? 
-
+Web Front End:
+Front End Latency
+Implementation of Standard CS Algorithms Useing idomatic JavaScript
+idomatic JavaScript:
+Articulate JavaScript Strengths and Shortcomings
