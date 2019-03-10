@@ -15,7 +15,7 @@ Algorithms -
 		Algorithms linked to a specific data structure:
 		Big-O notation/Run-Time:
 	Discuss complex algorithms like:
-		1. Dijkstra
+		1. Dijkstra - https://www.youtube.com/watch?v=GazC3A4OQTE
 		2. A*
 
 Sorting - 
