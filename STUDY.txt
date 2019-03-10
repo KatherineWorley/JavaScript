@@ -72,7 +72,19 @@ Recursion:
 	How can you use recursion to find a more elegant solution to problems that can be solved iteratively? 
 
 Web Front End:
-Front End Latency
-Implementation of Standard CS Algorithms Useing idomatic JavaScript
-idomatic JavaScript:
-Articulate JavaScript Strengths and Shortcomings
+	Front End Latency
+	Implementation of Standard CS Algorithms Useing idomatic JavaScript
+	idomatic JavaScript:
+
+	Articulate JavaScript Strengths and Shortcomings
+
+	Be ready to talk about anything listed below: 
+			1. Web Security issues 
+					XSS
+					XSRF
+			2. Prototypal Inheritance
+			3. DOM API & Manipulation
+			4. CSS Manipulation
+			5. Browser/DOM events and event handling
+			6. XHR Request & HTTP Headers
+			7. JavaScript Closures
