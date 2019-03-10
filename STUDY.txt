@@ -19,4 +19,27 @@ Discuss complex algorithms like:
 	2. A*
 
 Sorting - 
+insertion-sort;
+radix-sort:
+QuickSort:
+MergeSort:
+HeapSort:
+
+Data structures-
+Arrays:
+Linked Lists:
+Stacks"
+Queues:
+Hash-sets:
+Hash-maps:
+Hash-Tables:
+Dictionary:
+Trees:
+Binary Trees:
+Heaps:
+Graphis:
+What algorithms tend to wot with each data structure?
+
+
+
 
