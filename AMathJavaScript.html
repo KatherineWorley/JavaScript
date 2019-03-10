@@ -6,6 +6,8 @@
 <body>
 
 	<script type="text/javascript">
+
+	//MEDIAN	
 	const numberArray = [5, 6, 50, 1, -5, 1, 2, 3, 4, -4];
 
 	const median = arr => {
@@ -14,6 +16,27 @@
 	return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
 	};
 	console.log(median(numberArray));
+
+function medianTwo(values){
+	values.sort(function(a,b){
+  	return a-b;
+  });
+  var half = Math.floor(values.length / 2);
+  
+  if (values.length % 2)
+  	return values[half];
+  else
+  	return (values[half - 1] + values[half]) / 2.0;
+}
+
+console.log(medianTwo([1,2,3,4]));
+console.log(medianTwo([1,2,3,4,5]));
+console.log(medianTwo(numberArray));
+
+//MODE
+
+
+
 	</script>
 
 </body>
