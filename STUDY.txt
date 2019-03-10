@@ -2,51 +2,51 @@ Coding -
 JavaScript. Focus on conceptual understanding. 
 
 Algorithms - 
-Bottom-up approach: 
-Top-down approach:
-How can you imiprove/change it? 
-Sorting:
-Plus Searching:
-Binary Search:
-Divide-and-conquer:
-Dynamic Programming/Memoization:
-Greediness:
-Recursion:
-Algorithms linked to a specific data struction:
-Big-O notation/Run-Time:
+	Bottom-up approach: 
+	Top-down approach:
+	How can you imiprove/change it? 
+	Sorting:
+	Plus Searching:
+	Binary Search:
+	Divide-and-conquer:
+	Dynamic Programming/Memoization:
+	Greediness:
+	Recursion:
+	Algorithms linked to a specific data struction:
+	Big-O notation/Run-Time:
 Discuss complex algorithms like:
 	1. Dijkstra
 	2. A*
 
 Sorting - 
-insertion-sort;
-radix-sort:
-QuickSort:
-MergeSort:
-HeapSort:
+	insertion-sort;
+	radix-sort:
+	QuickSort:
+	MergeSort:
+	HeapSort:
 
 Data structures-
-Arrays:
-Linked Lists:
-Stacks"
-Queues:
-Hash-sets:
-Hash-maps:
-Hash-Tables:
-Dictionary:
-Trees:
-Binary Trees:
-Heaps:
-Graphis:
+	Arrays:
+	Linked Lists:
+	Stacks"
+	Queues:
+	Hash-sets:
+	Hash-maps:
+	Hash-Tables:
+	Dictionary:
+	Trees:
+	Binary Trees:
+	Heaps:
+	Graphis:
 What algorithms tend to wot with each data structure?
 
 Mathematics-
-Basic descrete Math Questions:
-Counting Problems:
-Probability Problems:
-Descrete Math 101:
-n-Choose-k problems: 
-ilk:
+	Basic descrete Math Questions:
+	Counting Problems:
+	Probability Problems:
+	Descrete Math 101:
+	n-Choose-k problems: 
+	ilk:
 
 Graphs:
 Can a problem be applied with a graph algorithm?
@@ -57,9 +57,9 @@ For example:
 	4. Cycle-detection
 
 Three basic ways to represent a graph in memory, what are they and their pros/cons? 
-1. Objects and pointers
-2. Matrix
-3. Adjacency List
+	1. Objects and pointers
+	2. Matrix
+	3. Adjacency List
 
 
 
