@@ -48,6 +48,19 @@ Descrete Math 101:
 n-Choose-k problems: 
 ilk:
 
+Graphs:
+Can a problem be applied with a graph algorithm?
+For example: 
+	1. Distance
+	2. Search
+	3. Connectivity
+	4. Cycle-detection
+
+Three basic ways to represent a graph in memory, what are they and their pros/cons? 
+1. Objects and pointers
+2. Matrix
+3. Adjacency List
+
 
 
 
