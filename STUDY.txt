@@ -44,7 +44,7 @@ Data structures-
 				  ['p','p','p','p','p','p','p','p'],
 				  ['r','n','b','q','k','b','n','r'] ];
 		Linked Lists:
-		Stacks"
+		Stacks:
 		Queues:
 		Hash-sets:
 		Hash-maps:
