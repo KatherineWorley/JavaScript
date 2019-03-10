@@ -13,10 +13,12 @@ Algorithms -
 		Greediness:
 		Recursion:
 		Algorithms linked to a specific data structure:
-		Big-O notation/Run-Time:
+		Big-O notation/Run-Time: 
+			1. https://www.youtube.com/watch?v=v4cd1O4zkGw
+			2. http://bigocheatsheet.com/
 	Discuss complex algorithms like:
 		1. Dijkstra - https://www.youtube.com/watch?v=GazC3A4OQTE
-		2. A*
+		2. A* - https://www.youtube.com/watch?v=ySN5Wnu88nE
 
 Sorting - 
 	insertion-sort;
@@ -27,6 +29,20 @@ Sorting -
 
 Data structures-
 		Arrays:
+			var fruits = ['Apple', 'Banana', 'Mango'];
+			var numbers = [1, 2, 3, 4];
+			var vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot'];
+			var elements = ['this is the first element', 'this is the second element', 'this is the last element'];
+			var years = [1950, 1960, 1970, 1980, 1990, 2000, 2010];
+			var board = [ 
+				  ['R','N','B','Q','K','B','N','R'],
+				  ['P','P','P','P','P','P','P','P'],
+				  [' ',' ',' ',' ',' ',' ',' ',' '],
+				  [' ',' ',' ',' ',' ',' ',' ',' '],
+				  [' ',' ',' ',' ',' ',' ',' ',' '],
+				  [' ',' ',' ',' ',' ',' ',' ',' '],
+				  ['p','p','p','p','p','p','p','p'],
+				  ['r','n','b','q','k','b','n','r'] ];
 		Linked Lists:
 		Stacks"
 		Queues:
