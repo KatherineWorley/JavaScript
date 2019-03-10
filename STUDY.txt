@@ -61,6 +61,14 @@ Three basic ways to represent a graph in memory, what are they and their pros/co
 	2. Matrix
 	3. Adjacency List
 
+Know Conputational complexity, their tradoffs and how to implement them in real code. 
+	Basic graph traversal algorithms
+	Breadth-first search
+	depth-first search
+
+
+
+
 
 
 
