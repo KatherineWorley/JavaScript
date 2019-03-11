@@ -14,6 +14,50 @@
 			p.style.fontSize = '50px';
 		}
 
+		//regular
+		console.log('hello');
+
+		//interpolated
+		console.log('Hello I am the %s string!', 'correct');
+
+		//styled
+		console.log('%c I am some great text', 'font-sie:50px; background:red');
+
+		//warning
+		console.warn('OH NO!');
+
+		//error
+		console.error('Ah shit!');
+
+		//info
+		console.info('Albert Einstein was left handed.');
+
+		//testing
+		const p = document.querySelector('p');
+		// console.assert(p.classList.contains('ouch'), 'That is wrong, yo.');
+
+		//clear 
+		// console.clear()
+ 
+		//viewing DOM elements
+		console.log(p);
+		console.dir(p);
+
+		//grouping together
+		
+		dogs.forEach(dog => {
+			console.log(`This is ${dog.name}`);
+			console.log(`${dog.name} is ${dog.age} years old.`);
+			console.log(`${dog.name} is ${dog.age * 7} years old.`);
+		})
+		
+		
+
+
+
+
+
+
 	</script>
 
 </body>
