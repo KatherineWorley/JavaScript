@@ -46,7 +46,7 @@ Data structures-
 		Linked Lists:
 		Stacks:
 		Queues:
-		Hash-sets:
+		Hash-sets: var hashset = new HashSet(1, '1', [1]);
 		Hash-maps:
 		Hash-Tables:
 		Dictionary:
@@ -90,19 +90,20 @@ Recursion:
 Web Front End:
 	Front End Latency
 	Implementation of Standard CS Algorithms Useing idomatic JavaScript
-	idomatic JavaScript:
+	Idomatic JavaScript:
 
 Articulate JavaScript Strengths and Shortcomings
-	Pros of JavaScript:
-	1. It's and front and back end lanugage. 
-	2. It's everywhere. Websites, PDFs, software (Adobe), build scripts/trigger events. 
-	3. Event Handlers/Trigger events, click, mouse over, key down... 
-	4. Can completed math functions/turing complete language. 
-	5. It can accept and manipulate data within the DOM of a brower to be used for an additional purpose. 
+		Pros of JavaScript:
+		1. It's a front and back end lanugage. 
+		2. It's everywhere. Websites, PDFs, software (Adobe), build scripts/trigger events. 
+		3. Event Handlers/Trigger events, click, mouse over, key down... 
+		4. Can completed math functions/turing complete language. 
+		5. It can accept and manipulate data within the DOM of a brower to be used for an additional purpose. 
 
-	Cons of JavaScript:
-	1. User has the ability to turn it off/Functionality in control of user 
-	2. Since it's a client-side language, it can be used for malice intent. 
+		Cons of JavaScript:
+		1. User has the ability to turn it off/Functionality in control of user 
+		2. Since it's a client-side language, it can be used for malice intent. 
+		3. JavaScript can be interpreted differently within different browsers. 
 
 	Be ready to talk about anything listed below: 
 			1. Web Security issues 
