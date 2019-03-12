@@ -66,7 +66,13 @@
 		console.count('katherine');
 
 		//timing 
-
+		console.time('fetch data');
+		fetch('https://api.github.com/users/KatherineWorley')
+			.then(data => data.json())
+			.then(data => {
+				console.timeEnd('fetch data');
+				console.log(data);
+			})
 
 
 
