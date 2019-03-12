@@ -92,7 +92,17 @@ Web Front End:
 	Implementation of Standard CS Algorithms Useing idomatic JavaScript
 	idomatic JavaScript:
 
-	Articulate JavaScript Strengths and Shortcomings
+Articulate JavaScript Strengths and Shortcomings
+	Pros of JavaScript:
+	1. It's and front and back end lanugage. 
+	2. It's everywhere. Websites, PDFs, software (Adobe), build scripts/trigger events. 
+	3. Event Handlers/Trigger events, click, mouse over, key down... 
+	4. Can completed math functions/turing complete language. 
+	5. It can accept and manipulate data within the DOM of a brower to be used for an additional purpose. 
+
+	Cons of JavaScript:
+	1. User has the ability to turn it off/Functionality in control of user 
+	2. Since it's a client-side language, it can be used for malice intent. 
 
 	Be ready to talk about anything listed below: 
 			1. Web Security issues 
