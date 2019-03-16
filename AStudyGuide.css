@@ -1,0 +1,43 @@
+.sorting {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  display: flex;
+}
+.one {
+  grid-column: 1 ;
+  grid-row: 1;
+  flex: 1;
+  width: 32%;
+}
+.two { 
+  grid-column: 2;
+  grid-row: 1;
+  flex: 1;
+  width: 32%;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+  flex: 1;
+  width: 32%;
+}
+.four {
+  grid-column: 1;
+  grid-row: 2;
+  flex: 1;
+  width: 32%;
+}
+.five {
+  grid-column: 1;
+  grid-row: 2;
+  flex: 1;
+  width: 32%;
+}
+
+@media (max-width: 400px) {
+  .sorting {
+    display: block;
+  }
+}
