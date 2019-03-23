@@ -148,6 +148,7 @@ What algorithms tend to work with each data structure?
   <li>
   	<ol>
 		  <b>Objects and pointers</b>
+		  <li>objects and pointers - Using node objects, and pointers to adjacent nodes (with weights) to represent edges. Alternatively, using an Edge object to represent a connection between two nodes.</li>
 		  <li>Pros:</li>
 		  <li>Cons:</li>
 		</ol> 
@@ -156,6 +157,7 @@ What algorithms tend to work with each data structure?
   <li>
   	<ol>
 		  <b>Matrix</b>
+		  <li>Adjacency Matrix - For n nodes, a matrix of bool[n][n], with cell[a][b] set to True to show an edge exists between nodes a and b. For weighted graph, this would be a matrix of int[n][n], with cell [a][b] set to the edge weight (otherwise zero.) For a non-directed graph, [a][b] = [b][a]. For a directed graph [a][b] is independent of [b][a].</li>
 		  <li>Pros:</li>
 		  <li>Cons:</li>
 		</ol> 
@@ -164,6 +166,7 @@ What algorithms tend to work with each data structure?
   <li>
   	<ol>
 		  <b>Adjacency List</b>
+		  <li>Adjacency lists - Each node has a linked list of nodes where edges exist.</li>
 		  <li>Pros:</li>
 		  <li>Cons:</li>
 		</ol> 
@@ -247,6 +250,14 @@ What algorithms tend to work with each data structure?
 		<li>https://khan4019.github.io/front-end-Interview-Questions/css.html</li>
 		<li>https://khan4019.github.io/front-end-Interview-Questions/js1.html</li>
 	</ol>
+
+	<h3>Reverse String</h3>
+	<script type="text/javascript">
+		function reverseString(str) {
+		    return str.split("").reverse().join("");
+		}
+		console.log(reverseString("hello"));
+	</script>
 
 </body>
 </html>
