@@ -73,6 +73,36 @@
 		console.log(binomial(8,3));
 		console.log(binomial(10,2));
 
+		function mainCircle() {
+	    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+	    const PI = Math.PI;
+	    let rad = readLine();
+	    function area(r) {
+	        return PI * r * r;
+	    }
+	    
+	    function perimeter(r) {
+	        return 2 * PI * r
+	    }
+
+	    
+	    // Print the area of the circle:
+	    console.log(area(rad));
+	    
+	    // Print the perimeter of the circle:
+	    console.log(perimeter(rad));
+	  }
+
+	  function main() {
+    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+    var input = readLine();
+    
+    // Print the area of the circle:
+    console.log(input*input*Math.PI);
+    
+    // Print the perimeter of the circle:
+    console.log(input*2*Math.PI);
+  }
 	</script> 
 </body>
 </html>
