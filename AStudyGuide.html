@@ -40,20 +40,6 @@
 		</ul>  
 
 <h1>Sorting</h1>
-<!-- <h2>https://github.com/benoitvallon/computer-science-in-javascript/tree/master/sorting-algorithms-in-javascript</h2>
-			<ul>
-				<li>Insertion-Sort</li>
-				<li><iframe width="300" height="169" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe></li>
-				<li>radix-sort</li>
-				<li><iframe width="300" height="160" src="https://www.youtube.com/embed/2109VzXVTus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-				<li>QuickSort</li>
-				<li><iframe width="300" height="160" src="https://www.youtube.com/embed/SLauY6PpjW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-				<li>MergeSort</li>
-				<li><iframe width="300" height="160" src="https://www.youtube.com/embed/4VqmGXwpLqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-				<li>HeapSort</li>
-				<li><iframe width="300" height="160" src="https://www.youtube.com/embed/2DmK_H7IdTo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-			</ul> -->
-
 			<div class="sorting">
 			  <div class="one"><iframe width="300" height="169" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe></div>
 			  <div class="two"><iframe width="300" height="160" src="https://www.youtube.com/embed/2109VzXVTus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -111,7 +97,41 @@ What algorithms tend to work with each data structure?
 		<ol>Counting Problems
 				<li>Multiplication Principle: When you have two or more decisions to make, the total number of possible ways of choosing is found by multiplying the numbers of options for each choice.</li>
 				<li>Factorial (number of ways to put in order): If you have n objects that need to be arranged in an order, the number of possible orders is “n factorial,” abbreviated n! • You can find n! by multiplying all the whole numbers from n down to 1.</li>
+				<script type="text/javascript">
+					function factorial(x) {
+					  if (x < 0) return;
+					  if (x === 0) return 1;
+					  return x * factorial(x - 1);
+					}
+					console.log(factorial(4));
+				</script>
 				<li>Permutations (number of ways to select with an order): If you are asked to count the number of ways that k out of n objects can be selected with an order, the number of ways is “n permutation k,” abbreviated nPk. • You can find nPk by multiplying k whole numbers starting from n and counting downward.</li> 
+				<script type="text/javascript">
+					function permute(permutation) {
+						  var length = permutation.length,
+						      result = [permutation.slice()],
+						      c = new Array(length).fill(0),
+						      i = 1, k, p;
+
+						  while (i < length) {
+						    if (c[i] < i) {
+						      k = i % 2 && c[i];
+						      p = permutation[i];
+						      permutation[i] = permutation[k];
+						      permutation[k] = p;
+						      ++c[i];
+						      i = 1;
+						      result.push(permutation.slice());
+						    } else {
+						      c[i] = 0;
+						      ++i;
+						    }
+						  }
+						  return result;
+						}
+
+						console.log(permute([1, 2, 3]));
+				</script>
 				<li>Combinations (number of ways to select without an order): If you are asked to count the number of ways that k out of n objects can be selected without an order, the number of ways is “n combination k,” abbreviated nCk. • You can find nCk by setting up a fraction in the following way: on the top, multiply k whole numbers counting downward from n; on the bottom, multiply k whole numbers counting upward from 1.</li>
 				<li>To buy a computer system, a customer can choose one of 4 monitors, one of 2 keyboards, one of 4 computers and one of 3 printers. Determine the number of possible systems that a customer can choose from. A customer can choose one monitor, one keyboard, one computer and one printer. Using the counting principle used in the introduction above, the number of all possible computer systems that can be bought is given by N = 4 × 2 × 4 × 3 = 96</li>
 				<li>In a certain country telephone numbers have 9 digits. The first two digits are the area code (03) and are the same within a given area. The last 7 digits are the local number and cannot begin with 0. How many different telephone numbers are possible within a given area code in this country? The first digit of the area code is 0, no choice which is in fact one choice only. The second digit of the area code is 1, no choice or one choice only. The first digit of the local code can be any digit except 0, so 9 choices. The 2nd, 3rd, 4th, 5th, 6th and 7 th digits of the local code can be any digit, hence 10 choices each. N = 1 × 1 × 9 × 10 × 10 × 10 × 10 × 10 × 10 = 9,000,000</li>
