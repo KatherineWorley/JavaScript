@@ -29,17 +29,39 @@
     // Declare a variable named 'firstString' and initialize with the string "HackerRank".
     const firstString = 'HackerRank ';
     
-    // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number        type) on a new line.
+    // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number type) on a new line.
     console.log(firstInteger + parseInt(secondInteger));
     
-    // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number            type) on a new line.
+    // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number type) on a new line.
     console.log(firstDecimal + parseFloat(secondDecimal));
     
-    // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
+    // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The variable 'firstString' must be printed first.
     console.log(firstString + secondString);
 }
-		console.log(10, 0.10, 'Hello Katherine');
-		
+		console.log(performOperation(10, 0.10, 'Hello Katherine'));
+	
+
+	//Implement a function named factorial that has one parameter: an integer,n . It must return the value of n! (i.e.,n factorial). The function must return the value of n!. 4! = 4*3*2*1=24
+		function factorial1(n) {
+    if (n > 1) {
+        return n * factorial1(n - 1);
+    	}
+    	return 1;
+		}
+
+		console.log(factorial1(10));
+
+		function factorial2(m) {
+	    if (m == 0 || m == 1) {
+	        return 1;
+	    } else {
+	        return m * factorial2(m-1);
+	    }
+		}
+
+		console.log(factorial2(7));
+
+
 	</script> 
 </body>
 </html>
