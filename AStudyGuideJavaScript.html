@@ -117,6 +117,14 @@
 		console.log(e.match());
 		console.log(e.match("[a-z]+"));
 
+		var m = "Yo Yo";
+		console.log(m.normalize());
+		console.log(m.normalize("NFKC"));
+
+		var y = "Yo Ho, Yo Ho! A pirates life for me.";
+		console.log(y.repeat () + "x" + y.repeat(0));
+		console.log(y.repeat(2));
+
 	</script> 
 </body>
 </html>
