@@ -67,47 +67,40 @@
 
 		console.log(binomial(8,3));
 		console.log(binomial(10,2));
-
-		//weighted mean
-		function processData(input) {
-  // Grab and convert the data
-  var data = input.split("\n")[1].split(" ");
-  data = data.map(function(x){
-    return parseInt(x);
-  })
   
-  var weights = input.split("\n")[2].split(" ");
-  weights = weights.map(function(x){
-    return parseInt(x);
-  })
-  
-  // Weighted mean
-  
-  function weightedMean(data, weights) {
-    var sum = 0;
-    for (i = 0; i < data.length; i++) {
-      sum += data[i] * weights[i];
-    }
-    return (sum / weights.reduce(function(x, y) {
-      return x + y;
-    }, 0)).toFixed(1);
-  } 
-  console.log(weightedMean(data, weights));
-}
 
+	  var myNumber = 4;
+		var myString = String(myNumber);
 
-process.stdin.resume();
-process.stdin.setEncoding("ascii");
-_input = "";
-process.stdin.on("data", function (input) {
-    _input += input;
-});
+		console.log(myNumber + " is a " + typeof myNumber);
+		console.log(myString  + " is a " + typeof myString);
 
-process.stdin.on("end", function () {
-   processData(_input);
-});
+		var s = "Hello";
+		var t = "Is it me you're looking for?";
+		var u = s.concat(t);
+		console.log(s + " " + t);
+		console.log(u);
 
+		var p = "I can see it in your eyes."; 
+		console.log(p.includes() + " " + p.includes(""));
+		console.log(p.includes("hack") + " " + p.includes("Hack"));
 
+		var q = "I can see it in your smile."; 
+		console.log(q.endsWith() + " " + q.endsWith(""));
+		console.log(q.endsWith("rank") + " " + q.endsWith("Rank"));
+
+		var z = "Because you know just what to say";
+		console.log(
+		    z.indexOf("a") + " " 
+		    + z.indexOf("a", z.length) + " " 
+		    + z.indexOf("a", 6)
+		);
+		console.log(
+		    z.indexOf("an") + " " 
+		    + z.indexOf("x") + " " 
+		    + z.indexOf("")
+		);
+	
 	</script> 
 </body>
 </html>
