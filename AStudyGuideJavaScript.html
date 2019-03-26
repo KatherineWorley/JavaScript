@@ -213,7 +213,20 @@
 		    console.log(p3 + ' ' + o3[p3]);
 		};
 
-		
+		const arr3 = ['a', 'b', 'c', 'd'];
+
+		arr3.forEach((value, index, array) => {
+		    console.log('index', index, 'has a value of', value,
+		    'which correlates to array[' + index + ']:', array[index]);
+		});
+
+		arr3.forEach((value, index) => {
+		    console.log('index', index, 'has a value of', value);
+		});
+
+		arr3.forEach((value) => {
+		    console.log('value:', value);
+		});
 
 
 
