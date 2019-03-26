@@ -129,6 +129,18 @@
 		var z = "Hello a there ... ";
 		console.log(z.replace() + " " + z.replace("a", ""));
 
+		var aa = "Forecasters call for weather on Monday.";
+		console.log(aa.search() + " " + aa.search("[a-z]"));
+		console.log(aa.search("a") + " " + aa.search("an"));
+
+		var bb = "Cows lose their jobs as milk prices drop";
+		console.log(bb.slice(0, 6) + " " + bb.slice(6));
+		console.log(
+    bb.slice() + " " 
+    + bb.slice(-4, 8) + " " 
+    + bb.slice(-4, -2)
+		);
+
 	</script> 
 </body>
 </html>
