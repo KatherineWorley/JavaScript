@@ -337,6 +337,26 @@
 		    console.log(p8 + ': ' + oooooo[p8]);
 		}
 
+
+		var i9 = 0;
+		var j9 = 8;
+
+		checkiandj: while (i9 < 4) {
+		  console.log('i9: ' + i9);
+		  i9 += 1;
+
+		  checkj: while (j9 > 4) {
+		    console.log('j9: ' + j9);
+		    j9 -= 1;
+
+		    if ((j9 % 2) == 0)
+		      continue checkj;
+		    console.log(j9 + ' is odd.');
+		  }
+		  console.log('i9 = ' + i9);
+		  console.log('j9 = ' + j9);
+		}
+
 	</script> 
 </body>
 </html>
