@@ -335,7 +335,7 @@
 		// 'p' is the property
 		for (p8 in oooooo) {
 		    console.log(p8 + ': ' + oooooo[p8]);
-		}
+		};
 
 
 		var i9 = 0;
@@ -355,8 +355,20 @@
 		  }
 		  console.log('i9 = ' + i9);
 		  console.log('j9 = ' + j9);
-		}
+		};
 
+		var i11, j11;
+
+		loop1:
+		for (i11 = 0; i11 < 3; i11++) {      //The first for statement is labeled "loop1"
+		   loop2:
+		   for (j11 = 0; j11 < 3; j11++) {   //The second for statement is labeled "loop2"
+		      if (i11 === 1 && j11 === 1) {
+		         continue loop1;
+		      }
+		      console.log('i11 = ' + i11 + ', j11 = ' + j11);
+		   }
+		}
 	</script> 
 </body>
 </html>
