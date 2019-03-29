@@ -109,9 +109,13 @@
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
     const transporatation = data.reduce(function(ojb, item) {
-    	ojb
+    	if (!obj[item]) {
+    		obj[item] = 0;
+    	}
+    	ojb[item]++;
     	retun obj;
-    }, {})
+    }, {});
+    console.log(transporatation);
 
 
 
