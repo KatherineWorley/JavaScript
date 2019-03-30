@@ -78,6 +78,57 @@
 	console.log(evenNumbers)
 
 	
+	 // you can also use it to remove a particular item in an array:
+
+	const participants = [
+	  { id: 'a3f47', username: 'john' },
+	  { id: 'fek28', username: 'mary' },
+	  { id: 'n3j44', username: 'sam' },
+	]
+
+	function removeParticipant(participants, id) {
+	  return participants.filter(participant => participant.id !== id)
+	}
+
+	console.log(removeParticipant(participants, 'a3f47')) //  [{ id: 'fek28', username: 'mary' }, { id: 'n3j44', username: 'sam' }];
+
+
+	// reduce
+	// Most difficult method to understand in my opinion. But once you master it, it’s crazy how many things you can do with it.
+
+	// Basically, reduce is about taking an array of values and combine them into one value. It takes two parameters, a callback function which is our reducer and an optional initial value (which is the first item of the array by default). The reducer itself takes four parameters:
+
+	// The accumulator: it accumulates the returned values in your reducer.
+	// The current value of the array
+	// The current index
+	// The array reduce was called upon
+	// Most of the time, you’ll just use the first two parameters: the accumulator and the current value.
+
+	// Let’s not be too theoretical. Here is the most common example of reduce:
+
+	const numbersReduce = [37, 12, 28, 4, 9]
+	const total = numbersReduce.reduce((total, n) => total + n)
+	console.log(total) // 90
+
+	//  On the first iteration, the accumulator, which is total, takes an initial value of 37. The returned value is 37 + n and n is equal to 12, thus 49. On the second iteration, the the accumulator is equal to 49, the returned value is 49 + 28 = 77. And so on and so forth.
+
+	// reduce is so powerful that you can actually use it to build a lot of array methods like map or filter:
+
+	const map = (arr, fn) => {
+	  return arr.reduce((mappedArr, element) => {
+	    return [...mappedArr, fn(element)]
+	  }, [])
+	}
+
+	console.log(map([1, 2, 3, 4], n => n + 1)) // [2, 3, 4, 5]
+
+	const filter = (arr, fn) => {
+	  return arr.reduce((filteredArr, element) => {
+	    return fn(element) ? [...filteredArr] : [...filteredArr, element]
+	  }, [])
+	}
+
+	console.log(filter([1, 2, 3, 4, 5, 6], n => n % 2 === 0)) // [1, 3, 5]
 
 
 
