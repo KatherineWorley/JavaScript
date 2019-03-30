@@ -175,6 +175,17 @@
 	console.log(arr) // /!\ MUTATION ["foo", 42, { name: "Hello" }]
 	console.log(copy) // ["bar", 42, { name: "Hello" }]
 
+	// So, if you want to make a “real” copy of an array that contains object or arrays, you can use a lodash function like cloneDeep. But don’t feel like you have to do such a thing. The goal here is to be aware of how things work under the hood.
+
+	// Good to know
+	// You’fll find below other methods that are good to know and that can help you with some problems such as searching an element in an array, taking a portion of an array and more.
+
+	// includes (ES2015)
+	// Have you ever used indexOf to know if something is in an array or not? Awful way to do it right? Luckily for us, includes does that for us. Give a parameter to includes and it will search in the array if the element exists.
+
+	const sports = ['football', 'archery', 'judo']
+	const hasFootball = sports.includes('football')
+	console.log(hasFootball) // true
 
 	</script>
 
