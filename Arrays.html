@@ -130,6 +130,50 @@
 
 	console.log(filter([1, 2, 3, 4, 5, 6], n => n % 2 === 0)) // [1, 3, 5]
 
+	// Basically, we gave reduce an initial value of []: our accumulator. For map, we ran a function whose result is added at then end of the accumulator thanks to the spread operator (we’ll see it just after, don’t worry.). For filter, it’s nearly the same except that we ran the filter function on the element. If it returns true, we return the previous array, otherwise we add the element to the end of the array.
+
+	// Let’s see a more advanced example: deeply flatten an array, that is to say transforming something like [1, 2, 3, [4, [[[5, [6, 7]]]], 8]] into [1, 2, 3, 4, 5, 6, 7, 8].
+
+
+
+	function flatDeep(arr) {
+	  return arr.reduce((flattenArray, element) => {
+	    return Array.isArray(element)
+	      ? [...flattenArray, ...flatDeep(element)]
+	      : [...flattenArray, element]
+	  }, [])
+	}
+
+	console.log(flatDeep([1, 2, 3, [4, [[[5, [6, 7]]]], 8]])) // [1, 2, 3, 4, 5, 6, 7, 8]
+
+	// Spread operator (ES2015)
+	// I agree, this is not a method. However, using the spread operator can help you achieve many things when working with arrays. In fact, you can use it to expand the values of an array in another array. From that point, you can make a copy of an array or concatenate multiple arrays.
+
+
+	const numbersNumbers = [1, 2, 3]
+	const numbersCopy = [...numbersNumbers]
+	console.log(numbersCopy) // [1, 2, 3]
+
+	const otherNumbers = [4, 5, 6]
+	const numbersConcatenated = [...numbersNumbers, ...otherNumbers]
+	console.log(numbersConcatenated) // [1, 2, 3, 4, 5, 6]
+
+	// Caution: the spread operator does a shallow copy of the original array. But what does shallow mean? 🤔
+
+	// Well, a shallow copy will duplicate the original elements as little as possible. So when you have an array containing numbers, strings or booleans (primitive types), there’s no problem, values are really duplicated. However, this is not the same for objects or arrays. Only the reference to the original value will be copied! Therefore, if you make a shallow copy of an array containing an object and that you modify the object in the copied array, it will also modify the object in the original array since they have the same reference.
+
+	const arr = ['foo', 42, { name: 'Thomas' }]
+	let copy = [...arr]
+
+	copy[0] = 'bar'
+
+	console.log(arr) // No mutations: ["foo", 42, { name: "Thomas" }]
+	console.log(copy) // ["bar", 42, { name: "Thomas" }]
+
+	copy[2].name = 'Hello'
+
+	console.log(arr) // /!\ MUTATION ["foo", 42, { name: "Hello" }]
+	console.log(copy) // ["bar", 42, { name: "Hello" }]
 
 
 	</script>
