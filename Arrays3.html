@@ -128,6 +128,40 @@ console.log(evenNumbersPlusTwo);
 const evenNumbersMinusOne = numbers.filter(n => n - 1);
 console.log(evenNumbersMinusOne);
 
+
+
+
+
+
+
+// const participants = [
+//   { id: 'a3f47', username: 'john' },
+//   { id: 'fek28', username: 'mary' },
+//   { id: 'n3j44', username: 'sam' },
+// ]
+
+// function removeParticipant(participants, id) {
+//   return participants.filter(participant => participant.id !== id)
+// }
+
+// console.log(removeParticipant(participants, 'a3f47')) //  [{ id: 'fek28', username: 'mary' }, { id: 'n3j44', username: 'sam' }];
+
+const participants = [
+	{ id: 'a3f47', username: 'john' },
+	{ id: 'fek28', username: 'mary'},
+	{ id: 'n3j44', username: 'sam'},
+];
+
+function removeParticipant(participant, id) {
+	return participants.filter(participant => participant.id !== id)
+};
+
+console.log(removeParticipant(participants, 'a3f47'));
+
+
+
+
+
 const allActivities = [
 { title: 'My Activity',
 coordinates: [50.123, 3.291]},
