@@ -128,49 +128,17 @@ console.log(evenNumbersPlusTwo);
 const evenNumbersMinusOne = numbers.filter(n => n - 1);
 console.log(evenNumbersMinusOne);
 
-
-
-
-
-
-
-// const participants = [
-//   { id: 'a3f47', username: 'john' },
-//   { id: 'fek28', username: 'mary' },
-//   { id: 'n3j44', username: 'sam' },
-// ]
-
-// function removeParticipant(participants, id) {
-//   return participants.filter(participant => participant.id !== id)
-// }
-
-// console.log(removeParticipant(participants, 'a3f47')) //  [{ id: 'fek28', username: 'mary' }, { id: 'n3j44', username: 'sam' }];
-
 const participants = [
-	{ id: 'a3f47', username: 'john' },
+	{ id: 'a3f47', username: 'john'},
 	{ id: 'fek28', username: 'mary'},
-	{ id: 'n3j44', username: 'sam'},
+	{ id: 'nej44', username: 'sam'},
 ];
 
-function removeParticipant(participant, id) {
+function removeParticipant(participants, id) {
 	return participants.filter(participant => participant.id !== id)
 };
 
-console.log(removeParticipant(participants, 'a3f47'));
-
-const participantsTwo = [
-{ id: 'a3f47', username: 'john'},
-{ id: 'fek28', username: 'mary'},
-{ id: 'n3j44', username: 'sam'},
-];
-
-function removeParticipantAlso(participantsTwo, id) {
-	return participantsTwo.filter(participant => participant.id !== id)
-};
-
-console.log(removeParticipantAlso(participantsTwo, 'a3f47'));
-
-
+console.log(removeParticipant())
 
 const allActivities = [
 { title: 'My Activity',
