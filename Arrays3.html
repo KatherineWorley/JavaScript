@@ -145,17 +145,26 @@ console.log(evenNumbersPlusTwo);
 const evenNumbersMinusOne = numbers.filter(n => n - 1);
 console.log(evenNumbersMinusOne);
 
-const participants = [
+const participantsOne = [
 	{ id: 'a3f47', username: 'john'},
 	{ id: 'fek28', username: 'mary'},
 	{ id: 'nej44', username: 'sam'},
 ];
 
-function removeParticipant(participants, id) {
-	return participants.filter(participant => participant.id !== id)
+function removeParticipant(participantsOne, id) {
+	return participantsOne.filter(participant => participant.id !== id)
 };
 
-console.log(removeParticipant(participants, 'a3f47'));
+console.log(removeParticipant(participantsOne, 'a3f47'));
+
+
+const participant = [
+	{ id: 'a3f47', username: 'john'},
+	{ id: 'fek28', username: 'mary'},
+	{ id: 'nej44', username: 'sam'},
+];
+
+function
 
 
 // REDUCE - reduce is about taking an array of values and combine them into one value. It takes two parameters, a callback function which is our reducer and an optional initial value (which is the first item of the array by default). The reducer itself takes four parameters:
