@@ -174,6 +174,45 @@ const numbers = [37, 12, 28, 4, 9]
 const total = numbers.reduce((total, n) => total + n)
 console.log(total) 
 
+// Spread operator (ES2015)
+
+
+const numbers = [1, 2, 3]
+const numbersCopy = [...numbers]
+console.log(numbersCopy) // [1, 2, 3]
+
+const otherNumbers = [4, 5, 6]
+const numbersConcatenated = [...numbers, ...otherNumbers]
+console.log(numbersConcatenated) // [1, 2, 3, 4, 5, 6]
+
+
+const arr = ['foo', 42, { name: 'Thomas' }]
+let copy = [...arr]
+
+copy[0] = 'bar'
+
+console.log(arr) // No mutations: ["foo", 42, { name: "Thomas" }]
+console.log(copy) // ["bar", 42, { name: "Thomas" }]
+
+copy[2].name = 'Hello'
+
+console.log(arr) // /!\ MUTATION ["foo", 42, { name: "Hello" }]
+console.log(copy) // ["bar", 42, { name: "Hello" }]
+
+// includes (ES2015)
+
+const sports = ['football', 'archery', 'judo']
+const hasFootball = sports.includes('football')
+console.log(hasFootball) // true
+
+
+
+// ForEach takes a function as a parameter that takes itself three parameters: the current value, the index and the array.
+
+const numbers = [1, 2, 3, 4, 5]
+numbers.forEach(console.log)
+
+
 
 
 
