@@ -245,6 +245,59 @@ const users = [
 const user = users.findIndex(user => user.id === '6gbe')
 console.log(user) // 1
 
+// slice
+// Whenever you need to take a portion of an array or copy an array, you can use slice. But be careful, just like the spread operator, slice returns a shallow copy of that portion!
+
+const numbers = [1, 2, 3, 4, 5]
+const copy = numbers.slice()
+
+// some - If you want to test that at least one element of an array passes a test, well you can use some. Just like map, filter or find, some takes a callback function as its only parameter. It returns true if at least one element pass the test, false otherwise. You can use some when you are dealing with permissions for example:
+
+const users = [
+  {
+    id: 'fe34',
+    permissions: ['read', 'write'],
+  },
+  {
+    id: 'a198',
+    permissions: [],
+  },
+  {
+    id: '18aa',
+    permissions: ['delete', 'read', 'write'],
+  },
+]
+
+const hasDeletePermission = users.some(user =>
+  user.permissions.includes('delete')
+)
+console.log(hasDeletePermission) // true
+
+// every
+// Similar to some except that every tests if all elements pass the condition (instead of at least one).
+
+const users = [
+  {
+    id: 'fe34',
+    permissions: ['read', 'write'],
+  },
+  {
+    id: 'a198',
+    permissions: [],
+  },
+  {
+    id: '18aa',
+    permissions: ['delete', 'read', 'write'],
+  },
+]
+
+const hasAllReadPermission = users.every(user =>
+  user.permissions.includes('read')
+)
+console.log(hasAllReadPermission) // false
+
+
+
 </script>
 
 </body>
