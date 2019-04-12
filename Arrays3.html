@@ -221,8 +221,29 @@ const judoIndex = sports.indexOf('judo')
 console.log(judoIndex) // 2
 
 
+// find
+// The find method is quite similar to the filter method. You have to provide it a function that test each array’s element. However, find stops testing elements as soons as it finds one that passes the test. Not filter. filter will iterate over the whole array no matter what.
 
+const users = [
+  { id: 'af35', name: 'john' },
+  { id: '6gbe', name: 'mary' },
+  { id: '932j', name: 'gary' },
+]
 
+const user = users.find(user => user.id === '6gbe')
+console.log(user) // { id: '6gbe', name: 'mary' }
+
+// findIndex
+// It’s exactly the same as the find method except that it returns the index of the first element found instead of the element directly.
+
+const users = [
+  { id: 'af35', name: 'john' },
+  { id: '6gbe', name: 'mary' },
+  { id: '932j', name: 'gary' },
+]
+
+const user = users.findIndex(user => user.id === '6gbe')
+console.log(user) // 1
 
 </script>
 
