@@ -205,13 +205,10 @@ const sports = ['football', 'archery', 'judo']
 const hasFootball = sports.includes('football')
 console.log(hasFootball) // true
 
-
-
 // ForEach takes a function as a parameter that takes itself three parameters: the current value, the index and the array.
 
 const numbers = [1, 2, 3, 4, 5]
 numbers.forEach(console.log)
-
 
 // indexOf
 // It is used to return the first index at which a given element can be found in the array. indexOf was also widely used to check whether an element is in an array or not. To be honest, I don’t use it that much as of today.
@@ -219,7 +216,6 @@ const sports = ['football', 'archery', 'judo']
 
 const judoIndex = sports.indexOf('judo')
 console.log(judoIndex) // 2
-
 
 // find
 // The find method is quite similar to the filter method. You have to provide it a function that test each array’s element. However, find stops testing elements as soons as it finds one that passes the test. Not filter. filter will iterate over the whole array no matter what.
@@ -296,6 +292,43 @@ const hasAllReadPermission = users.every(user =>
 )
 console.log(hasAllReadPermission) // false
 
+// flat (ES2019)
+// These are the brand new methods that are coming in the JavaScript world. Basically, flat creates a new array by concatenating all sub-array elements into it. It accepts one parameter, a number, which represents how deep you want to flatten your array:
+
+const numbers = [1, 2, [3, 4, [5, [6, 7]], [[[[8]]]]]]
+
+const numbersflattenOnce = numbers.flat()
+console.log(numbersflattenOnce) // [1, 2, 3, 4, Array[2], Array[1]]
+
+const numbersflattenTwice = numbers.flat(2)
+console.log(numbersflattenTwice) // [1, 2, 3, 4, 5, Array[2], Array[1]]
+
+const numbersFlattenInfinity = numbers.flat(Infinity)
+console.log(numbersFlattenInfinity) // [1, 2, 3, 4, 5, 6, 7, 8]
+
+// flatMap (ES2019)
+// Can you guess what this method does? I bet you can just with the name.
+
+// First it runs a mapping function on each element. Then it flattens the array once. Easy peasy!
+
+const sentences = [
+  'This is a sentence',
+  'This is another sentence',
+  "I can't find any original phrases",
+]
+
+const allWords = sentences.flatMap(sentence => sentence.split(' '))
+console.log(allWords) // ["This", "is", "a", "sentence", "This", "is", "another", "sentence", "I", "can't", "find", "any", "original", "phrases"]
+
+// join
+// If you need to create a string based on the array’s elements, you’re looking for join. It allows to create a new string by concatenating all the array’s elements, separated by a provided separator.
+
+// For example, you can display at a glance all the participants of an activity using join:
+
+
+const participants = ['john', 'mary', 'gary']
+const participantsFormatted = participants.join(', ')
+console.log(participantsFormatted) // john, mary, gary
 
 
 
