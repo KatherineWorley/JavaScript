@@ -421,6 +421,22 @@ const lastMessage = messages.pop()
 console.log(messages) // ['Hello', 'Hey', 'How are you?']
 console.log(lastMessage) // I'm fine
 
+// push
+// This is a widely used method when working with arrays. In fact push allows you to add one or more elements to an array. It is also usually used to build a new array based on an old one.
+
+const todoItems = [1, 2, 3, 4, 5]
+
+const itemsIncremented = []
+for (let i = 0; i < items.length; i++) {
+  itemsIncremented.push(items[i] + 1)
+}
+
+console.log(itemsIncremented) // [2, 3, 4, 5, 6]
+
+const todos = ['Write an article', 'Proofreading']
+todos.push('Publish the article')
+console.log(todos) // ['Write an article', 'Proofreading', 'Publish the article']
+
 
 </script>
 
