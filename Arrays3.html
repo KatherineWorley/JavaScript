@@ -337,6 +337,31 @@ console.log(participantsFormatted) // john, mary, gary
 const nodes = document.querySelectorAll('.todo-item') // this is an instance of NodeList
 const todoItems = Array.from(nodes) // now, you can use map, filter, etc. as you're workin with an array!
 
+// Then you can have fun with these nodes and for example registering an event listener on each one of them with forEach:
+
+todoItems.forEach(item => {
+  item.addEventListener('click', function() {
+    alert(`You clicked on ${item.innerHTML}`)
+  })
+})
+
+// isArray
+// While we’re at it, let’s talk about another static method of Array which is isArray. Without surprises, it tells you if the passed value is an array or not.
+
+// Based on the previous example, this is what we get:
+
+const nodes = document.querySelectorAll('.todo-item')
+console.log(Array.isArray(nodes)) // false
+const todoItems = Array.from(nodes)
+console.log(Array.isArray(todoItems)) // true
+
+const arr = [1, 2, 3, 4, 5]
+const copy = [...arr] // or arr.slice()
+
+// sort
+// Yes, sort modifies the original array. In fact, it sorts the elements of an array in place. The default sorting method transforms all the elements into strings and sort them alphabetically:
+
+
 
 
 
