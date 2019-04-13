@@ -361,8 +361,65 @@ const copy = [...arr] // or arr.slice()
 // sort
 // Yes, sort modifies the original array. In fact, it sorts the elements of an array in place. The default sorting method transforms all the elements into strings and sort them alphabetically:
 
+const names = ['john', 'mary', 'gary', 'anna']
+names.sort()
+console.log(names) // ['anna', 'gary', 'john', 'mary']
+
+const numbers = [23, 12, 17, 187, 3, 90]
+numbers.sort()
+console.log(numbers) // [12, 17, 187, 23, 3, 90] 
+
+// Then, how to sort the array? Well, sort accepts one function, a comparison function. This function accepts two parameters: the first element (let’s call it a) and the second element for comparison (b). The comparison between these two elements need to return a number:
+
+// If it’s negative, a is sorted before b
+// If it’s positive, b is sorted before a
+// No changes if it’s 0.
+// Then you can sort numbers that way:
 
 
+const numbers = [23, 12, 17, 187, 3, 90]
+numbers.sort((a, b) => a - b)
+console.log(numbers) // [3, 12, 17, 23, 90, 187]
+
+const posts = [
+  {
+    title: 'Create a Discord bot under 15 minutes',
+    date: new Date(2018, 11, 26),
+  },
+  { title: 'How to get better at writing CSS', date: new Date(2018, 12, 17) },
+  { title: 'JavaScript arrays', date: new Date() },
+]
+posts.sort((a, b) => a.date - b.date) // Substracting two dates returns the difference in millisecond between them
+console.log(posts)
+
+// fill modifies or fills all the elements of an array from a start index to an end index with a static value. A great use of fill is to fill a new array with static values.
+
+// Normally I would have called a function that generates ids and random names but let's not bother with that here.
+function fakeUser() {
+  return {
+    id: 'fe38',
+    name: 'thomas',
+  }
+}
+
+const posts = Array(3).fill(fakeUser())
+console.log(posts) // [{ id: "fe38", name: "thomas" }, { id: "fe38", name: "thomas" }, { id: "fe38", name: "thomas" }]
+
+// I think the method’s name is pretty clear here. However, keep in mind that just like sort does, reverse reverses the array in place!
+
+const numbers = [1, 2, 3, 4, 5]
+
+numbers.reverse()
+console.log(numbers) // [5, 4, 3, 2, 1]
+
+
+// pop
+// That one removes the last element from an array and returns it.
+
+const messages = ['Hello', 'Hey', 'How are you?', "I'm fine"]
+const lastMessage = messages.pop()
+console.log(messages) // ['Hello', 'Hey', 'How are you?']
+console.log(lastMessage) // I'm fine
 
 
 </script>
