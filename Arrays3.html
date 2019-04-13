@@ -331,6 +331,14 @@ const participantsFormatted = participants.join(', ')
 console.log(participantsFormatted) // john, mary, gary
 
 
+// from
+// This is a static method that creates a new Array from an array-like or iterable object like a string for example. It can be useful when you’re working with the dom.
+
+const nodes = document.querySelectorAll('.todo-item') // this is an instance of NodeList
+const todoItems = Array.from(nodes) // now, you can use map, filter, etc. as you're workin with an array!
+
+
+
 
 </script>
 
