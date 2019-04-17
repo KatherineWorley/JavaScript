@@ -357,11 +357,11 @@ todoItems.forEach(item => {
 
 const nodesThree = document.querySelectorAll('.todo-item')
 console.log(Array.isArray(nodesThree)) // false
-const todoItems = Array.from(nodesThree)
-console.log(Array.isArray(todoItems)) // true
+const todoItemsYeah = Array.from(nodesThree)
+console.log(Array.isArray(todoItemsYeah)) // true
 
-const arr = [1, 2, 3, 4, 5]
-const copy = [...arr] // or arr.slice()
+const arrrrr = [1, 2, 3, 4, 5]
+const copyYo = [...arrrrr] // or arr.slice()
 
 // sort
 // Yes, sort modifies the original array. In fact, it sorts the elements of an array in place. The default sorting method transforms all the elements into strings and sort them alphabetically:
@@ -371,7 +371,7 @@ names.sort()
 console.log(names) // ['anna', 'gary', 'john', 'mary']
 
 const numbersBig = [23, 12, 17, 187, 3, 90]
-numbers.sort()
+numbersBig.sort()
 console.log(numbersBig) // [12, 17, 187, 23, 3, 90] 
 
 // Then, how to sort the array? Well, sort accepts one function, a comparison function. This function accepts two parameters: the first element (let’s call it a) and the second element for comparison (b). The comparison between these two elements need to return a number:
@@ -382,11 +382,10 @@ console.log(numbersBig) // [12, 17, 187, 23, 3, 90]
 // Then you can sort numbers that way:
 
 
-const numbers = [23, 12, 17, 187, 3, 90]
-numbers.sort((a, b) => a - b)
-console.log(numbers) // [3, 12, 17, 23, 90, 187]
+numbersBig.sort((a, b) => a - b)
+console.log(numbersBig) // [3, 12, 17, 23, 90, 187]
 
-const posts = [
+const postsYo = [
   {
     title: 'Create a Discord bot under 15 minutes',
     date: new Date(2018, 11, 26),
@@ -394,8 +393,8 @@ const posts = [
   { title: 'How to get better at writing CSS', date: new Date(2018, 12, 17) },
   { title: 'JavaScript arrays', date: new Date() },
 ]
-posts.sort((a, b) => a.date - b.date) // Substracting two dates returns the difference in millisecond between them
-console.log(posts)
+postsYo.sort((a, b) => a.date - b.date) // Substracting two dates returns the difference in millisecond between them
+console.log(postsYo)
 
 // fill modifies or fills all the elements of an array from a start index to an end index with a static value. A great use of fill is to fill a new array with static values.
 
@@ -407,8 +406,8 @@ function fakeUser() {
   }
 }
 
-const posts = Array(3).fill(fakeUser())
-console.log(posts) // [{ id: "fe38", name: "thomas" }, { id: "fe38", name: "thomas" }, { id: "fe38", name: "thomas" }]
+const postsBig = Array(3).fill(fakeUser())
+console.log(postsBig) // [{ id: "fe38", name: "thomas" }, { id: "fe38", name: "thomas" }, { id: "fe38", name: "thomas" }]
 
 // I think the method’s name is pretty clear here. However, keep in mind that just like sort does, reverse reverses the array in place!
 
