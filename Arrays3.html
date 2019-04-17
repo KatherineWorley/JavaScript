@@ -440,6 +440,17 @@ const todoItemsListTwo = ['Write an article', 'Proofreading']
 todoItemsListTwo.push('Publish the article')
 console.log(todoItemsListTwo) // ['Write an article', 'Proofreading', 'Publish the article']
 
+
+const months = ['January', 'February', 'March', 'April', ' May']
+
+// With splice
+months.splice(1, 3) // remove three elements starting at index 1
+console.log(months) // ['January', 'May']
+
+// Without splice
+const monthsSliced = [...months.slice(0, 1), ...months.slice(4)]
+console.log(monthsSliced) // ['January', 'May']
+
 </script>
 
 </body>
