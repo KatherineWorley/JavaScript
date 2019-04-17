@@ -476,6 +476,15 @@ array.forEach(function (element) {
 
 
 
+// With unshift
+numbers.unshift(1, 2)
+console.log(numbers) // [1, 2, 3, 4, 5]
+
+// Without unshift
+const newNumbers = [1, 2, ...numbers]
+console.log(newNumbers) // [1, 2, 3, 4, 5]
+
+
 
 
 </script>
