@@ -175,14 +175,14 @@ console.log(hasFootball);
 // The array reduce was called upon
 // Most of the time, you’ll just use the first two parameters: the accumulator and the current value.
 
-const numbers = [37, 12, 28, 4, 9]
+
 const total = numbers.reduce((total, n) => total + n)
 console.log(total) 
 
 // Spread operator (ES2015)
 
 
-const numbers = [1, 2, 3]
+
 const numbersCopy = [...numbers]
 console.log(numbersCopy) // [1, 2, 3]
 
@@ -206,55 +206,55 @@ console.log(copy) // ["bar", 42, { name: "Hello" }]
 
 // includes (ES2015)
 
-const sports = ['football', 'archery', 'judo']
-const hasFootball = sports.includes('football')
-console.log(hasFootball) // true
+const sportsTwo = ['football', 'archery', 'judo']
+const hasFootballTwo = sportsTwo.includes('football')
+console.log(hasFootballTwo) // true
 
 // ForEach takes a function as a parameter that takes itself three parameters: the current value, the index and the array.
 
-const numbers = [1, 2, 3, 4, 5]
+
 numbers.forEach(console.log)
 
 // indexOf
 // It is used to return the first index at which a given element can be found in the array. indexOf was also widely used to check whether an element is in an array or not. To be honest, I don’t use it that much as of today.
-const sports = ['football', 'archery', 'judo']
+const sportsThree = ['football', 'archery', 'judo']
 
-const judoIndex = sports.indexOf('judo')
+const judoIndex = sportsThree.indexOf('judo')
 console.log(judoIndex) // 2
 
 // find
 // The find method is quite similar to the filter method. You have to provide it a function that test each array’s element. However, find stops testing elements as soons as it finds one that passes the test. Not filter. filter will iterate over the whole array no matter what.
 
-const users = [
+const usersTwo = [
   { id: 'af35', name: 'john' },
   { id: '6gbe', name: 'mary' },
   { id: '932j', name: 'gary' },
 ]
 
-const user = users.find(user => user.id === '6gbe')
+const user = usersTwo.find(user => user.id === '6gbe')
 console.log(user) // { id: '6gbe', name: 'mary' }
 
 // findIndex
 // It’s exactly the same as the find method except that it returns the index of the first element found instead of the element directly.
 
-const users = [
+const usersThree = [
   { id: 'af35', name: 'john' },
   { id: '6gbe', name: 'mary' },
   { id: '932j', name: 'gary' },
 ]
 
-const user = users.findIndex(user => user.id === '6gbe')
-console.log(user) // 1
+const userThree = usersThree.findIndex(user => userThree.id === '6gbe')
+console.log(userThree) // 1
 
 // slice
 // Whenever you need to take a portion of an array or copy an array, you can use slice. But be careful, just like the spread operator, slice returns a shallow copy of that portion!
 
-const numbers = [1, 2, 3, 4, 5]
-const copy = numbers.slice()
+
+const copyTwo = numbers.slice()
 
 // some - If you want to test that at least one element of an array passes a test, well you can use some. Just like map, filter or find, some takes a callback function as its only parameter. It returns true if at least one element pass the test, false otherwise. You can use some when you are dealing with permissions for example:
 
-const users = [
+const usersW = [
   {
     id: 'fe34',
     permissions: ['read', 'write'],
@@ -269,7 +269,7 @@ const users = [
   },
 ]
 
-const hasDeletePermission = users.some(user =>
+const hasDeletePermission = usersW.some(user =>
   user.permissions.includes('delete')
 )
 console.log(hasDeletePermission) // true
@@ -277,7 +277,7 @@ console.log(hasDeletePermission) // true
 // every
 // Similar to some except that every tests if all elements pass the condition (instead of at least one).
 
-const users = [
+const usersId = [
   {
     id: 'fe34',
     permissions: ['read', 'write'],
@@ -292,7 +292,7 @@ const users = [
   },
 ]
 
-const hasAllReadPermission = users.every(user =>
+const hasAllReadPermission = usersId.every(user =>
   user.permissions.includes('read')
 )
 console.log(hasAllReadPermission) // false
@@ -300,15 +300,15 @@ console.log(hasAllReadPermission) // false
 // flat (ES2019)
 // These are the brand new methods that are coming in the JavaScript world. Basically, flat creates a new array by concatenating all sub-array elements into it. It accepts one parameter, a number, which represents how deep you want to flatten your array:
 
-const numbers = [1, 2, [3, 4, [5, [6, 7]], [[[[8]]]]]]
+const numbersDeep = [1, 2, [3, 4, [5, [6, 7]], [[[[8]]]]]]
 
-const numbersflattenOnce = numbers.flat()
+const numbersflattenOnce = numbersDeep.flat()
 console.log(numbersflattenOnce) // [1, 2, 3, 4, Array[2], Array[1]]
 
-const numbersflattenTwice = numbers.flat(2)
+const numbersflattenTwice = numbersDeep.flat(2)
 console.log(numbersflattenTwice) // [1, 2, 3, 4, 5, Array[2], Array[1]]
 
-const numbersFlattenInfinity = numbers.flat(Infinity)
+const numbersFlattenInfinity = numbersDeep.flat(Infinity)
 console.log(numbersFlattenInfinity) // [1, 2, 3, 4, 5, 6, 7, 8]
 
 // flatMap (ES2019)
@@ -355,9 +355,9 @@ todoItems.forEach(item => {
 
 // Based on the previous example, this is what we get:
 
-const nodes = document.querySelectorAll('.todo-item')
-console.log(Array.isArray(nodes)) // false
-const todoItems = Array.from(nodes)
+const nodesThree = document.querySelectorAll('.todo-item')
+console.log(Array.isArray(nodesThree)) // false
+const todoItems = Array.from(nodesThree)
 console.log(Array.isArray(todoItems)) // true
 
 const arr = [1, 2, 3, 4, 5]
@@ -370,9 +370,9 @@ const names = ['john', 'mary', 'gary', 'anna']
 names.sort()
 console.log(names) // ['anna', 'gary', 'john', 'mary']
 
-const numbers = [23, 12, 17, 187, 3, 90]
+const numbersBig = [23, 12, 17, 187, 3, 90]
 numbers.sort()
-console.log(numbers) // [12, 17, 187, 23, 3, 90] 
+console.log(numbersBig) // [12, 17, 187, 23, 3, 90] 
 
 // Then, how to sort the array? Well, sort accepts one function, a comparison function. This function accepts two parameters: the first element (let’s call it a) and the second element for comparison (b). The comparison between these two elements need to return a number:
 
