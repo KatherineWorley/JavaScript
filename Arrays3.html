@@ -452,14 +452,31 @@ const monthsSliced = [...months.slice(0, 1), ...months.slice(4)]
 console.log(monthsSliced) // ['January', 'May']
 
 // With shift
-const firstNumber = numbers.shift()
-console.log(firstNumber) // 1
+const firstNumberOne = numbers.shift()
+console.log(firstNumberOne) // 1
 console.log(numbers) // [2, 3, 4, 5]
 
 // Without shift
-const [firstNumber, ...numbersWithoutOne] = numbers
-console.log(firstNumber) // 1
+const [firstNumberTwo, ...numbersWithoutOne] = numbers
+console.log(firstNumberTwo) // 1
 console.log(numbersWithoutOne) // [2, 3, 4, 5]
+
+
+
+
+array = [1, 2, 3, 4];
+array.forEach(function (element) {
+  console.log(element);
+  
+  if (element === 2) 
+    return;
+  
+});
+// Output: 1 2 3 4
+
+
+
+
 
 </script>
 
