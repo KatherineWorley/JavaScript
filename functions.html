@@ -58,6 +58,34 @@ function run(images) {
 loadImages(IMAGES, run);
 
 
+// Loading a JSON File
+
+function loadJSON(url, onsuccess) {
+  var request = new XMLHttpRequest();
+  request.onreadystatechange = function() {
+    if ((request.readyState == 4) && (request.status == 200)) // if DONE and SUCCESS
+      onsuccess(JSON.parse(request.responseText));
+  }
+  request.open("GET", url + ".json", true);
+  request.send();
+}
+
+// error handling
+
+function startLevel(level) {
+  // go!
+}
+
+loadJSON('level1', startLevel);
+
+// Game Loops
+// game loop that can update() and render() our game world.
+
+while(true) {  // UH OH! - blocks UI thread
+  update();
+  render();
+}
+
 
 
 
