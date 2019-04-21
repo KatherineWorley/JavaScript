@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+// Load a single image by constructing an <img> tag, adding an onload event listener, and setting the img src attribute
+function loadImage(src, callback) {
+  var img = document.createElement('img');
+  img.addEventListener('load', function() { callback(img); } , false);
+  img.src = src;
+}	
+
+// Start your game loop once the image has completed loading
+
+function run(sprites) {
+  // game loop goes here
+}
+
+loadImage("images/sprites", run);
+
+// Nested callback
+	
+
+
+
+
+	</script>
+
+</body>
+</html>
