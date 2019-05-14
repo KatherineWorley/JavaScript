@@ -13,10 +13,16 @@ let arr = [];
 
 let fruits = ["apple", "orange", "plum"];
 
+// add data using push then it is added at the end
 fruits.push("grape");
 alert( fruits );
 
-fruits.unshift('Apple');
+// add data using unshift then it is added at the beginning. Unshift, all the elements of the array are shifted 1 position towards the right and the first place is assigned to the item.
+fruits.unshift('pear');
+
+fruits.push("cantaloupe", "peach");
+fruits.unshift("pineapple", "lemon");
+alert( fruits );
 
 
 
