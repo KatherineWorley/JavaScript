@@ -66,6 +66,12 @@ console.log(orange.a);
 console.log(orange.a); // 1
 console.log(orange.z); // undefined
 
+var blue = Object.assign({}, orange);
+blue.b = 2;
+console.log(blue.a); // 1
+console.log(blue.b); // 2
+console.log(blue.z); // undefined
+
 
 
 </script>
