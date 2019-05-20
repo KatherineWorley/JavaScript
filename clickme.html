@@ -6,5 +6,13 @@
 <body>
 <button onclick="changeText()">Click me</button>
 <p>Change me!</p>
+
+<script>
+// Function to modify the text content of the paragraph
+const changeText = () => {
+    const p = document.querySelector('p');
+p.textContent = "I was changed with an inline event handler!";
+}
+</script>
 </body>
 </html>
