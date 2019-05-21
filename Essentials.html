@@ -8,20 +8,18 @@
 	<script type="text/javascript">
 
 		// MAP
-		const numbers = [1,2,3,4]
-		const numbersPlusOne = numbers.map(n => n + 1)
-		console.log(numbersPlusOne);
+const numbers = [1,2,3,4,5,6];
+const numbersPlusOne = numbers.map(n => n + 1)
+console.log(numbersPlusOne);
 
-		const allActivities = [
-		{ title: 'my activity', coordinates: [50.123, 3.291]},
-		{ title: 'Another activity', coordiantes: [1.238, 4.292]},
-		];
+const allActivities = [
+{ title: 'my activity', coordinates: [50.123, 3.291]},
+{ title: 'Another activity', coordiantes: [1.238, 4.292]},
+];
 const allCoordinates = allActivities.map(activity => activity.coordiantes)
 console.log(allCoordinates);
 
-
 // filter
-const numbers = [1,2,3,4,5,6];
 const oddNumbers = numbers.filter(n => n % 2 !== 0)
 console.log(oddNumbers);
 
