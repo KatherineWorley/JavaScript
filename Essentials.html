@@ -6,6 +6,8 @@
 <body>
 
 	<script type="text/javascript">
+
+		// MAP
 		const numbers = [1,2,3,4]
 		const numbersPlusOne = numbers.map(n => n + 1)
 		console.log(numbersPlusOne);
@@ -16,6 +18,23 @@
 		];
 const allCoordinates = allActivities.map(activity => activity.coordiantes)
 console.log(allCoordinates);
+
+
+// filter
+const numbers = [1,2,3,4,5,6];
+const oddNumbers = numbers.filter(n => n % 2 !== 0)
+console.log(oddNumbers);
+
+const participants = [
+{ id: 'a3f47', username: 'john'},
+{ id: 'fek28', username: 'mary'},
+{ id: 'n3j44', username: 'sam'},
+]
+
+function removeParticipant(participants, id) {
+	return participants.filter(participant => participant.id !== id)
+}
+console.log(removeParticipant(participants, 'a3f47'))
 
 	</script>
 
